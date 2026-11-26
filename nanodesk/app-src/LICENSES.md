@@ -47,7 +47,7 @@ Abaixo, o destino dado a cada projeto citado. Princípios aplicados:
 | Traceveil (ManuGrig) | MIT | estudos de superfície de identificação | princípio de consistência aplicado no fingerprint.js |
 | Camoufox (daijro) | MPL-2.0 | anti-fingerprinting de navegador | referência de limites (não randomizar indiscriminadamente) |
 | URLCheck (TrianguloY) | CC-BY-4.0 (corrigido de MPL-2.0 na auditoria de 2026-11-26) | análise de URL antes de abrir | urlgate.js — heurística original, 100% local |
-| RedirectGuard (dikshanagvekar) | MIT — NÃO VERIFICADO (repositório não localizado na auditoria de 2026-11-26) | cortar redes de redirecionamento | redirect-guard.js (desde 1.5.1) |
+| RedirectGuard (dikshanagvekar) | MIT — CONFIRMADO pelo README upstream (badge + "MIT License — Free to use, modify, and distribute. No attribution required"); o repo não tem arquivo LICENSE | cortar redes de redirecionamento | redirect-guard.js (desde 1.5.1) |
 | Popup-Blocker-Pro (madjeek-web / Fabien Conéjéro) | MIT (confirmado por texto bruto do LICENSE) | bloquear pop-ups sem interação | popup-blocker.js (desde 1.5.1) |
 | PopUpOFF (RomanistHere) | Apache-2.0 (corrigido de MIT na auditoria de 2026-11-26) | bloqueio de modais/overlays de DOM | popup-off.js — porta da LÓGICA v2.1.3, sem código verbatim (desde 1.9.6) |
 | Popup Blocker (strict) (schomery) | MPL-2.0 (corrigido de GPL-3.0 na auditoria de 2026-11-26) | interceptar window.open/click/submit + iframes | popup-blocker-strict.js (desde 1.8.8) |

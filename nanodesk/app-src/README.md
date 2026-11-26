@@ -210,8 +210,8 @@ dados sensíveis.
   CC-BY-SA-3.0+), listas uBlock/uAssets ×11 (GPL-3.0), StevenBlack hosts (MIT).
 - Estudados como REFERÊNCIA (sem copiar código): uBlock Origin (GPL-3.0),
   PopUpOFF (Apache-2.0), Popup Blocker strict (MPL-2.0), ClearURLs (LGPL-3.0),
-  CanvasBlocker (MPL-2.0), URLCheck (CC-BY-4.0), RedirectGuard (MIT — não
-  verificado), Popup-Blocker-Pro (MIT), Consent-O-Matic (MIT), Bitwarden
+  CanvasBlocker (MPL-2.0), URLCheck (CC-BY-4.0), RedirectGuard (MIT —
+  declarado no README upstream), Popup-Blocker-Pro (MIT), Consent-O-Matic (MIT), Bitwarden
   (GPL-3.0, referência histórica — substituído pelo cofre nativo),
   LibreTranslate (AGPL-3.0, via API HTTP), Mullvad (GPL-3.0),
   FreeTube/Invidious/Piped (AGPL-3.0, apps/serviços externos),

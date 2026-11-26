@@ -267,6 +267,6 @@ Electron 45.4.1 (MIT) → Chromium + Node.js + V8 embutidos (avisos no LICENSES.
 
 ## 8. Lacunas conhecidas
 
-- `tools/` (set-pe-version.js, make-sha256sums.js) citado em package.json (`postdist:win`) NÃO está no repositório — build `dist:win` roda, o pós-build não. NÃO VERIFICADO onde o arquivo foi perdido.
+- `tools/` (set-pe-version.js, make-sha256sums.js) REESCRITO na auditoria de 2026-11-26 — os originais não foram localizados no repositório nem em backups; o formato do SHA256SUMS.txt foi replicado do build 1.9.6 real (estilo sha256sum/coreutils) e validado por --check contra o dist.
 - zip.js e fflate vendidos sem número de versão identificável (dist minificada).
-- Referência "dikshanagvekar/RedirectGuard" não localizada (NÃO VERIFICADO).
+- Referência "dikshanagvekar/RedirectGuard" CONFIRMADA (repositório existe; README upstream declara MIT, sem arquivo LICENSE no repo).
