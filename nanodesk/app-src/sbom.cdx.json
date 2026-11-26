@@ -1,0 +1,7685 @@
+{
+ "$schema": "https://cyclonedx.org/schema/bom-1.5.schema.json",
+ "bomFormat": "CycloneDX",
+ "specVersion": "1.5",
+ "serialNumber": "urn:uuid:937924b4-e3a8-4844-8329-16c9e777a07a",
+ "version": 1,
+ "metadata": {
+  "timestamp": "2026-11-26T02:49:32+00:00",
+  "tools": [
+   {
+    "vendor": "NanoDesk project",
+    "name": "gen_sbom.py",
+    "version": "1.0"
+   }
+  ],
+  "component": {
+   "type": "application",
+   "bom-ref": "pkg:npm/nanodesk@1.9.6",
+   "name": "nanodesk",
+   "version": "1.9.6",
+   "purl": "pkg:npm/nanodesk@1.9.6",
+   "author": "Projeto acadêmico NanoDesk",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:evidence",
+     "value": "package.json + audit 2026-11-26"
+    }
+   ]
+  },
+  "properties": [
+   {
+    "name": "nanodesk:audit-date",
+    "value": "2026-11-26"
+   },
+   {
+    "name": "nanodesk:evidence-sources",
+    "value": "npm registry 218/218; raw LICENSE files (GitHub); easylist.to licence page; *ORIGEM.txt SHA-256 provenance"
+   }
+  ]
+ },
+ "components": [
+  {
+   "type": "file",
+   "bom-ref": "bin:resources/aria2/aria2c.exe",
+   "name": "aria2",
+   "version": "1.37.0",
+   "author": "Tatsuhiro Tsujikawa",
+   "licenses": [
+    {
+     "license": {
+      "name": "GPL-2.0 WITH OpenSSL-exception"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "windows-build-only (not in source repo)"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "resources/aria2/aria2c.exe"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "resources/*/*ORIGEM.txt provenance docs"
+    }
+   ],
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "be2099c214f63a3cb4954b09a0becd6e2e34660b886d4c898d260febfe9d70c2"
+    }
+   ]
+  },
+  {
+   "type": "file",
+   "bom-ref": "bin:resources/bin/ffmpeg.exe (+7 DLLs)",
+   "name": "FFmpeg (lgpl-shared)",
+   "version": "8.1",
+   "author": "FFmpeg contributors / BtbN builds",
+   "licenses": [
+    {
+     "license": {
+      "name": "LGPL-3.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "windows-build-only (not in source repo)"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "resources/bin/ffmpeg.exe (+7 DLLs)"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "resources/*/*ORIGEM.txt provenance docs"
+    }
+   ]
+  },
+  {
+   "type": "file",
+   "bom-ref": "bin:resources/bin/yt-dlp.exe",
+   "name": "yt-dlp",
+   "version": "2026.10.26",
+   "author": "yt-dlp contributors",
+   "licenses": [
+    {
+     "license": {
+      "name": "Unlicense"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "windows-build-only (not in source repo)"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "resources/bin/yt-dlp.exe"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "resources/*/*ORIGEM.txt provenance docs"
+    }
+   ],
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "f5389d3698ecde4ef06f4e6b1ce0294fe9ac1396228c8990b8d3416d6d177a7d"
+    }
+   ]
+  },
+  {
+   "type": "file",
+   "bom-ref": "bin:resources/clamav/clamscan.exe",
+   "name": "ClamAV clamscan",
+   "version": "1.5.4",
+   "author": "Cisco-Talos",
+   "licenses": [
+    {
+     "license": {
+      "name": "GPL-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "windows-build-only (not in source repo)"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "resources/clamav/clamscan.exe"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "resources/*/*ORIGEM.txt provenance docs"
+    }
+   ],
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "f368912f61ddea8b302acf9114891ec57f8a45b0de77f076b1d19c960bc6f7cf"
+    }
+   ]
+  },
+  {
+   "type": "file",
+   "bom-ref": "bin:resources/clamav/freshclam.exe",
+   "name": "ClamAV freshclam",
+   "version": "1.5.4",
+   "author": "Cisco-Talos",
+   "licenses": [
+    {
+     "license": {
+      "name": "GPL-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "windows-build-only (not in source repo)"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "resources/clamav/freshclam.exe"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "resources/*/*ORIGEM.txt provenance docs"
+    }
+   ],
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "4032fdd45184333d7c963eec87664a8339c6f31dc5ae94bb5008fe5e88feaf1f"
+    }
+   ]
+  },
+  {
+   "type": "file",
+   "bom-ref": "bin:resources/tor/win/tor/tor.exe",
+   "name": "Tor expert bundle",
+   "version": "16.0 (tor 0.4.9.15)",
+   "author": "The Tor Project",
+   "licenses": [
+    {
+     "license": {
+      "name": "BSD-3-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "windows-build-only (not in source repo)"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "resources/tor/win/tor/tor.exe"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "resources/*/*ORIGEM.txt provenance docs"
+    }
+   ],
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "1607d98f5d13859077b1b349c55beba76b09acc788f0431fd824d11966fb1074"
+    }
+   ]
+  },
+  {
+   "type": "file",
+   "bom-ref": "data:filter:badware",
+   "name": "uBlock filters — badware (uAssets)",
+   "version": "2026-11-12",
+   "licenses": [
+    {
+     "license": {
+      "id": "GPL-3.0-only"
+     }
+    }
+   ],
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "4c2348fb66ade9ee63ea7984d9c6435393b2e9065d0241ecaba7352f12f4b88f"
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "data-filters"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "resources/filters/badware.txt"
+    },
+    {
+     "name": "nanodesk:source",
+     "value": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt"
+    }
+   ]
+  },
+  {
+   "type": "file",
+   "bom-ref": "data:filter:easylist",
+   "name": "EasyList",
+   "version": "2026-11-12",
+   "licenses": [
+    {
+     "expression": "GPL-3.0-or-later OR CC-BY-SA-3.0-or-later"
+    }
+   ],
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "f5cafe9d554221f12671caa803ded427cda7aef9afbcc250c54abe83f358962b"
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "data-filters"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "resources/filters/easylist.txt"
+    },
+    {
+     "name": "nanodesk:source",
+     "value": "https://easylist.to/easylist/easylist.txt"
+    }
+   ]
+  },
+  {
+   "type": "file",
+   "bom-ref": "data:filter:easyprivacy",
+   "name": "EasyPrivacy",
+   "version": "2026-11-12",
+   "licenses": [
+    {
+     "expression": "GPL-3.0-or-later OR CC-BY-SA-3.0-or-later"
+    }
+   ],
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "ff32d4c01a2e1c8fb4e77240f8a515c68fbc4184321349564852f418a64b84fc"
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "data-filters"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "resources/filters/easyprivacy.txt"
+    },
+    {
+     "name": "nanodesk:source",
+     "value": "https://easylist.to/easylist/easyprivacy.txt"
+    }
+   ]
+  },
+  {
+   "type": "file",
+   "bom-ref": "data:filter:privacy",
+   "name": "uBlock filters — privacy (uAssets)",
+   "version": "2026-11-12",
+   "licenses": [
+    {
+     "license": {
+      "id": "GPL-3.0-only"
+     }
+    }
+   ],
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "b9ef0a446d4d90c5bd00e4b0586c70414d6364c859dc022f6ee81833fc0781f0"
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "data-filters"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "resources/filters/privacy.txt"
+    },
+    {
+     "name": "nanodesk:source",
+     "value": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt"
+    }
+   ]
+  },
+  {
+   "type": "file",
+   "bom-ref": "data:filter:quickfixes",
+   "name": "uBlock filters — quickfixes (uAssets)",
+   "version": "2026-11-12",
+   "licenses": [
+    {
+     "license": {
+      "id": "GPL-3.0-only"
+     }
+    }
+   ],
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "7bff2be1aed676a8ceb2208ce680367b86e10e579b4cbcc0a0f1003813dffc57"
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "data-filters"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "resources/filters/quick-fixes.txt"
+    },
+    {
+     "name": "nanodesk:source",
+     "value": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/quick-fixes.txt"
+    }
+   ]
+  },
+  {
+   "type": "file",
+   "bom-ref": "data:filter:resourceabuse",
+   "name": "uBlock filters — resourceabuse (uAssets)",
+   "version": "2026-11-12",
+   "licenses": [
+    {
+     "license": {
+      "id": "GPL-3.0-only"
+     }
+    }
+   ],
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "aaf7c0fdfbcc05aad0d53905d2a73dd8a36f71f05c9285e133c4e76ac61761d8"
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "data-filters"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "resources/filters/resource-abuse.txt"
+    },
+    {
+     "name": "nanodesk:source",
+     "value": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt"
+    }
+   ]
+  },
+  {
+   "type": "file",
+   "bom-ref": "data:filter:resources",
+   "name": "uBO scriptlets (Ghostery adblocker assets)",
+   "version": "2026-11-12",
+   "licenses": [
+    {
+     "license": {
+      "id": "MPL-2.0"
+     }
+    }
+   ],
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "5ce0ce483f0e5514308ccb0240960a9dd7bfeab417debeef96960dce2c95f690"
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "data-filters"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "resources/filters/resources.json"
+    },
+    {
+     "name": "nanodesk:source",
+     "value": "https://raw.githubusercontent.com/ghostery/adblocker/master/packages/adblocker/assets/ublock-origin/resources.json"
+    }
+   ]
+  },
+  {
+   "type": "file",
+   "bom-ref": "data:filter:ublock",
+   "name": "uBlock filters — ublock (uAssets)",
+   "version": "2026-11-12",
+   "licenses": [
+    {
+     "license": {
+      "id": "GPL-3.0-only"
+     }
+    }
+   ],
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "73d674807c88016fef58ba055381efea22585faab1a262a6d5fbab3a0bb62ccd"
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "data-filters"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "resources/filters/ublock.txt"
+    },
+    {
+     "name": "nanodesk:source",
+     "value": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt"
+    }
+   ]
+  },
+  {
+   "type": "file",
+   "bom-ref": "data:filter:ublock2020",
+   "name": "uBlock filters — ublock2020 (uAssets)",
+   "version": "2026-11-12",
+   "licenses": [
+    {
+     "license": {
+      "id": "GPL-3.0-only"
+     }
+    }
+   ],
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "f68b1fceccba46ae349f9db803b3fcd3b8b71234d9d80d0cc0259b9672340d96"
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "data-filters"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "resources/filters/ublock-2020.txt"
+    },
+    {
+     "name": "nanodesk:source",
+     "value": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2020.txt"
+    }
+   ]
+  },
+  {
+   "type": "file",
+   "bom-ref": "data:filter:ublock2021",
+   "name": "uBlock filters — ublock2021 (uAssets)",
+   "version": "2026-11-12",
+   "licenses": [
+    {
+     "license": {
+      "id": "GPL-3.0-only"
+     }
+    }
+   ],
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "0772b56c297919bbbd70caece419b3ff889a209b333f8ab12bf564747bf39059"
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "data-filters"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "resources/filters/ublock-2021.txt"
+    },
+    {
+     "name": "nanodesk:source",
+     "value": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2021.txt"
+    }
+   ]
+  },
+  {
+   "type": "file",
+   "bom-ref": "data:filter:ublock2022",
+   "name": "uBlock filters — ublock2022 (uAssets)",
+   "version": "2026-11-12",
+   "licenses": [
+    {
+     "license": {
+      "id": "GPL-3.0-only"
+     }
+    }
+   ],
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "135a3adc233c6a86f63c51b869c364e396f0dae59796cee65284f72b6e725430"
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "data-filters"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "resources/filters/ublock-2022.txt"
+    },
+    {
+     "name": "nanodesk:source",
+     "value": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2022.txt"
+    }
+   ]
+  },
+  {
+   "type": "file",
+   "bom-ref": "data:filter:ublock2023",
+   "name": "uBlock filters — ublock2023 (uAssets)",
+   "version": "2026-11-12",
+   "licenses": [
+    {
+     "license": {
+      "id": "GPL-3.0-only"
+     }
+    }
+   ],
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "a7297bb83f0bbc228210c32be82e3e892d8c7f3f3f87953196fd6c0d77b71cbd"
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "data-filters"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "resources/filters/ublock-2023.txt"
+    },
+    {
+     "name": "nanodesk:source",
+     "value": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2023.txt"
+    }
+   ]
+  },
+  {
+   "type": "file",
+   "bom-ref": "data:filter:ublock2024",
+   "name": "uBlock filters — ublock2024 (uAssets)",
+   "version": "2026-11-12",
+   "licenses": [
+    {
+     "license": {
+      "id": "GPL-3.0-only"
+     }
+    }
+   ],
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "c85e13315c08368c4e70127b5b0104ea772c81a2cedf2abfa2b0fc378a3592a0"
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "data-filters"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "resources/filters/ublock-2024.txt"
+    },
+    {
+     "name": "nanodesk:source",
+     "value": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2024.txt"
+    }
+   ]
+  },
+  {
+   "type": "file",
+   "bom-ref": "data:filter:ublock2025",
+   "name": "uBlock filters — ublock2025 (uAssets)",
+   "version": "2026-11-12",
+   "licenses": [
+    {
+     "license": {
+      "id": "GPL-3.0-only"
+     }
+    }
+   ],
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "04c238cbb699238a7853f63f33dca0594775e89b75e113de2609666688c9117d"
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "data-filters"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "resources/filters/ublock-2025.txt"
+    },
+    {
+     "name": "nanodesk:source",
+     "value": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2025.txt"
+    }
+   ]
+  },
+  {
+   "type": "file",
+   "bom-ref": "data:filter:unbreak",
+   "name": "uBlock filters — unbreak (uAssets)",
+   "version": "2026-11-12",
+   "licenses": [
+    {
+     "license": {
+      "id": "GPL-3.0-only"
+     }
+    }
+   ],
+   "hashes": [
+    {
+     "alg": "SHA-256",
+     "content": "0645b79f33dd0504a1e8c62c723dbb77edb82f2ae46b2a5edb88a9ea2bb8de24"
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "data-filters"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "resources/filters/unbreak.txt"
+    },
+    {
+     "name": "nanodesk:source",
+     "value": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:github/gildas-lormeau/zip.js",
+   "name": "zip.js",
+   "version": "NOASSERTION",
+   "purl": "pkg:github/gildas-lormeau/zip.js",
+   "author": "Gildas Lormeau",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-3-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "vendored-source"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "src/readers/epub/foliate/vendor/zip.js"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "raw LICENSE file / upstream repo (audit 2026-11-26)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:github/johnfactotum/foliate-js",
+   "name": "foliate-js",
+   "version": "NOASSERTION",
+   "purl": "pkg:github/johnfactotum/foliate-js",
+   "author": "John Factotum",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "vendored-source"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "src/readers/epub/foliate/"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "raw LICENSE file / upstream repo (audit 2026-11-26)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40electron%2Fasar@3.4.1",
+   "name": "@electron/asar",
+   "version": "3.4.1",
+   "purl": "pkg:npm/%40electron%2Fasar@3.4.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40electron%2Fget@2.0.3",
+   "name": "@electron/get",
+   "version": "2.0.3",
+   "purl": "pkg:npm/%40electron%2Fget@2.0.3",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Samuel Attard"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40electron%2Fget@5.1.0",
+   "name": "@electron/get",
+   "version": "5.1.0",
+   "purl": "pkg:npm/%40electron%2Fget@5.1.0",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Samuel Attard"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40electron%2Fnotarize@1.2.4",
+   "name": "@electron/notarize",
+   "version": "1.2.4",
+   "purl": "pkg:npm/%40electron%2Fnotarize@1.2.4",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Samuel Attard"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40electron%2Fosx-sign@1.3.3",
+   "name": "@electron/osx-sign",
+   "version": "1.3.3",
+   "purl": "pkg:npm/%40electron%2Fosx-sign@1.3.3",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-2-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "electron"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40electron%2Funiversal@1.5.1",
+   "name": "@electron/universal",
+   "version": "1.5.1",
+   "purl": "pkg:npm/%40electron%2Funiversal@1.5.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Samuel Attard"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40electron-internal%2Fextract-zip@1.0.9",
+   "name": "@electron-internal/extract-zip",
+   "version": "1.0.9",
+   "purl": "pkg:npm/%40electron-internal%2Fextract-zip@1.0.9",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40exodus%2Fbytes@1.16.0",
+   "name": "@exodus/bytes",
+   "version": "1.16.0",
+   "purl": "pkg:npm/%40exodus%2Fbytes@1.16.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Exodus Movement, Inc."
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40ghostery%2Fadblocker-content@2.20.3",
+   "name": "@ghostery/adblocker-content",
+   "version": "2.20.3",
+   "purl": "pkg:npm/%40ghostery%2Fadblocker-content@2.20.3",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MPL-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Ghostery"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40ghostery%2Fadblocker-electron-preload@2.20.3",
+   "name": "@ghostery/adblocker-electron-preload",
+   "version": "2.20.3",
+   "purl": "pkg:npm/%40ghostery%2Fadblocker-electron-preload@2.20.3",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MPL-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Ghostery"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40ghostery%2Fadblocker-electron@2.20.3",
+   "name": "@ghostery/adblocker-electron",
+   "version": "2.20.3",
+   "purl": "pkg:npm/%40ghostery%2Fadblocker-electron@2.20.3",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MPL-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "direct"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Ghostery"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40ghostery%2Fadblocker-extended-selectors@2.20.3",
+   "name": "@ghostery/adblocker-extended-selectors",
+   "version": "2.20.3",
+   "purl": "pkg:npm/%40ghostery%2Fadblocker-extended-selectors@2.20.3",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MPL-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Ghostery"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40ghostery%2Fadblocker@2.20.3",
+   "name": "@ghostery/adblocker",
+   "version": "2.20.3",
+   "purl": "pkg:npm/%40ghostery%2Fadblocker@2.20.3",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MPL-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Ghostery"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40ghostery%2Furl-parser@1.3.1",
+   "name": "@ghostery/url-parser",
+   "version": "1.3.1",
+   "purl": "pkg:npm/%40ghostery%2Furl-parser@1.3.1",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MPL-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sam Macbeth"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40malept%2Fcross-spawn-promise@1.1.1",
+   "name": "@malept/cross-spawn-promise",
+   "version": "1.1.1",
+   "purl": "pkg:npm/%40malept%2Fcross-spawn-promise@1.1.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Mark Lee"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40playwright%2Ftest@1.65.1",
+   "name": "@playwright/test",
+   "version": "1.65.1",
+   "purl": "pkg:npm/%40playwright%2Ftest@1.65.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "direct"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Microsoft Corporation"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40remusao%2Fguess-url-type@2.1.0",
+   "name": "@remusao/guess-url-type",
+   "version": "2.1.0",
+   "purl": "pkg:npm/%40remusao%2Fguess-url-type@2.1.0",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MPL-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Rémi Berson <remi@cliqz.com>"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40remusao%2Fsmall@2.1.0",
+   "name": "@remusao/small",
+   "version": "2.1.0",
+   "purl": "pkg:npm/%40remusao%2Fsmall@2.1.0",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MPL-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Rémi Berson <remi@cliqz.com>"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40remusao%2Fsmaz-compress@2.2.0",
+   "name": "@remusao/smaz-compress",
+   "version": "2.2.0",
+   "purl": "pkg:npm/%40remusao%2Fsmaz-compress@2.2.0",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MPL-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Rémi Berson <remi@cliqz.com>"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40remusao%2Fsmaz-decompress@2.2.0",
+   "name": "@remusao/smaz-decompress",
+   "version": "2.2.0",
+   "purl": "pkg:npm/%40remusao%2Fsmaz-decompress@2.2.0",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MPL-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Rémi Berson <remi@cliqz.com>"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40remusao%2Fsmaz@2.2.0",
+   "name": "@remusao/smaz",
+   "version": "2.2.0",
+   "purl": "pkg:npm/%40remusao%2Fsmaz@2.2.0",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MPL-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Rémi Berson <remi@cliqz.com>"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40remusao%2Ftrie@2.1.0",
+   "name": "@remusao/trie",
+   "version": "2.1.0",
+   "purl": "pkg:npm/%40remusao%2Ftrie@2.1.0",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MPL-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Rémi Berson <remi@cliqz.com>"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40sindresorhus%2Fis@4.6.0",
+   "name": "@sindresorhus/is",
+   "version": "4.6.0",
+   "purl": "pkg:npm/%40sindresorhus%2Fis@4.6.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40szmarczak%2Fhttp-timer@4.0.6",
+   "name": "@szmarczak/http-timer",
+   "version": "4.0.6",
+   "purl": "pkg:npm/%40szmarczak%2Fhttp-timer@4.0.6",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Szymon Marczak"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40types%2Fcacheable-request@6.0.3",
+   "name": "@types/cacheable-request",
+   "version": "6.0.3",
+   "purl": "pkg:npm/%40types%2Fcacheable-request@6.0.3",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40types%2Fhttp-cache-semantics@4.2.0",
+   "name": "@types/http-cache-semantics",
+   "version": "4.2.0",
+   "purl": "pkg:npm/%40types%2Fhttp-cache-semantics@4.2.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40types%2Fkeyv@3.1.4",
+   "name": "@types/keyv",
+   "version": "3.1.4",
+   "purl": "pkg:npm/%40types%2Fkeyv@3.1.4",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40types%2Fnode@24.19.4",
+   "name": "@types/node",
+   "version": "24.19.4",
+   "purl": "pkg:npm/%40types%2Fnode@24.19.4",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40types%2Fresponselike@1.0.3",
+   "name": "@types/responselike",
+   "version": "1.0.3",
+   "purl": "pkg:npm/%40types%2Fresponselike@1.0.3",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40types%2Fyauzl@2.10.3",
+   "name": "@types/yauzl",
+   "version": "2.10.3",
+   "purl": "pkg:npm/%40types%2Fyauzl@2.10.3",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/%40xmldom%2Fxmldom@0.9.12",
+   "name": "@xmldom/xmldom",
+   "version": "0.9.12",
+   "purl": "pkg:npm/%40xmldom%2Fxmldom@0.9.12",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/at-least-node@1.0.0",
+   "name": "at-least-node",
+   "version": "1.0.0",
+   "purl": "pkg:npm/at-least-node@1.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Ryan Zimmerman"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/author-regex@1.0.0",
+   "name": "author-regex",
+   "version": "1.0.0",
+   "purl": "pkg:npm/author-regex@1.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Jon Schlinkert"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/balanced-match@1.0.2",
+   "name": "balanced-match",
+   "version": "1.0.2",
+   "purl": "pkg:npm/balanced-match@1.0.2",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Julian Gruber"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/base64-js@1.5.1",
+   "name": "base64-js",
+   "version": "1.5.1",
+   "purl": "pkg:npm/base64-js@1.5.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "T. Jameson Little"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/bcp-47-match@2.0.3",
+   "name": "bcp-47-match",
+   "version": "2.0.3",
+   "purl": "pkg:npm/bcp-47-match@2.0.3",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Titus Wormer"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/bcp-47@2.1.2",
+   "name": "bcp-47",
+   "version": "2.1.2",
+   "purl": "pkg:npm/bcp-47@2.1.2",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Titus Wormer"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/bluebird@3.7.2",
+   "name": "bluebird",
+   "version": "3.7.2",
+   "purl": "pkg:npm/bluebird@3.7.2",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Petka Antonov"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/boolean@3.2.0",
+   "name": "boolean",
+   "version": "3.2.0",
+   "purl": "pkg:npm/boolean@3.2.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/brace-expansion@1.1.22",
+   "name": "brace-expansion",
+   "version": "1.1.22",
+   "purl": "pkg:npm/brace-expansion@1.1.22",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Julian Gruber"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/buffer-crc32@0.2.13",
+   "name": "buffer-crc32",
+   "version": "0.2.13",
+   "purl": "pkg:npm/buffer-crc32@0.2.13",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Brian J. Brennan"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/buffer-equal@1.0.1",
+   "name": "buffer-equal",
+   "version": "1.0.1",
+   "purl": "pkg:npm/buffer-equal@1.0.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "James Halliday"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/cacheable-lookup@5.0.4",
+   "name": "cacheable-lookup",
+   "version": "5.0.4",
+   "purl": "pkg:npm/cacheable-lookup@5.0.4",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Szymon Marczak"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/cacheable-request@7.0.4",
+   "name": "cacheable-request",
+   "version": "7.0.4",
+   "purl": "pkg:npm/cacheable-request@7.0.4",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Luke Childs"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/clone-response@1.0.3",
+   "name": "clone-response",
+   "version": "1.0.3",
+   "purl": "pkg:npm/clone-response@1.0.3",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Luke Childs"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/commander@5.1.0",
+   "name": "commander",
+   "version": "5.1.0",
+   "purl": "pkg:npm/commander@5.1.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "TJ Holowaychuk"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/compare-version@0.1.2",
+   "name": "compare-version",
+   "version": "0.1.2",
+   "purl": "pkg:npm/compare-version@0.1.2",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Kevin Mårtensson"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/concat-map@0.0.1",
+   "name": "concat-map",
+   "version": "0.0.1",
+   "purl": "pkg:npm/concat-map@0.0.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "James Halliday"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/cross-spawn-windows-exe@1.2.0",
+   "name": "cross-spawn-windows-exe",
+   "version": "1.2.0",
+   "purl": "pkg:npm/cross-spawn-windows-exe@1.2.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Mark Lee"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/cross-spawn@7.0.6",
+   "name": "cross-spawn",
+   "version": "7.0.6",
+   "purl": "pkg:npm/cross-spawn@7.0.6",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "André Cruz"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/data-urls@8.0.0",
+   "name": "data-urls",
+   "version": "8.0.0",
+   "purl": "pkg:npm/data-urls@8.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Domenic Denicola"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/debug@2.6.9",
+   "name": "debug",
+   "version": "2.6.9",
+   "purl": "pkg:npm/debug@2.6.9",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "TJ Holowaychuk"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/debug@4.4.3",
+   "name": "debug",
+   "version": "4.4.3",
+   "purl": "pkg:npm/debug@4.4.3",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Josh Junon"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/decimal.js@10.6.0",
+   "name": "decimal.js",
+   "version": "10.6.0",
+   "purl": "pkg:npm/decimal.js@10.6.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Michael Mclaughlin"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/decompress-response@6.0.0",
+   "name": "decompress-response",
+   "version": "6.0.0",
+   "purl": "pkg:npm/decompress-response@6.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/defer-to-connect@2.0.1",
+   "name": "defer-to-connect",
+   "version": "2.0.1",
+   "purl": "pkg:npm/defer-to-connect@2.0.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Szymon Marczak"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/define-data-property@1.1.4",
+   "name": "define-data-property",
+   "version": "1.1.4",
+   "purl": "pkg:npm/define-data-property@1.1.4",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Jordan Harband"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/define-properties@1.2.1",
+   "name": "define-properties",
+   "version": "1.2.1",
+   "purl": "pkg:npm/define-properties@1.2.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Jordan Harband"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/detect-node@2.1.0",
+   "name": "detect-node",
+   "version": "2.1.0",
+   "purl": "pkg:npm/detect-node@2.1.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Ilya Kantor"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/dir-compare@3.3.0",
+   "name": "dir-compare",
+   "version": "3.3.0",
+   "purl": "pkg:npm/dir-compare@3.3.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Liviu Grigorescu"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/electron-dl@5.0.0",
+   "name": "electron-dl",
+   "version": "5.0.0",
+   "purl": "pkg:npm/electron-dl@5.0.0",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "direct"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/electron-packager@17.1.2",
+   "name": "electron-packager",
+   "version": "17.1.2",
+   "purl": "pkg:npm/electron-packager@17.1.2",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-2-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "direct"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Mark Lee"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/electron@45.4.1",
+   "name": "electron",
+   "version": "45.4.1",
+   "purl": "pkg:npm/electron@45.4.1",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "direct"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "build-runtime-embedded"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Electron Community"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/end-of-stream@1.4.5",
+   "name": "end-of-stream",
+   "version": "1.4.5",
+   "purl": "pkg:npm/end-of-stream@1.4.5",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Mathias Buus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/entities@9.0.0",
+   "name": "entities",
+   "version": "9.0.0",
+   "purl": "pkg:npm/entities@9.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-2-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Felix Boehm"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/env-paths@2.2.1",
+   "name": "env-paths",
+   "version": "2.2.1",
+   "purl": "pkg:npm/env-paths@2.2.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/env-paths@3.0.0",
+   "name": "env-paths",
+   "version": "3.0.0",
+   "purl": "pkg:npm/env-paths@3.0.0",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/error-ex@1.3.4",
+   "name": "error-ex",
+   "version": "1.3.4",
+   "purl": "pkg:npm/error-ex@1.3.4",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/es-define-property@1.0.1",
+   "name": "es-define-property",
+   "version": "1.0.1",
+   "purl": "pkg:npm/es-define-property@1.0.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Jordan Harband"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/es-errors@1.3.0",
+   "name": "es-errors",
+   "version": "1.3.0",
+   "purl": "pkg:npm/es-errors@1.3.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Jordan Harband"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/es6-error@4.1.1",
+   "name": "es6-error",
+   "version": "4.1.1",
+   "purl": "pkg:npm/es6-error@4.1.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Ben Youngblood"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/escape-goat@4.0.0",
+   "name": "escape-goat",
+   "version": "4.0.0",
+   "purl": "pkg:npm/escape-goat@4.0.0",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/escape-string-regexp@1.0.5",
+   "name": "escape-string-regexp",
+   "version": "1.0.5",
+   "purl": "pkg:npm/escape-string-regexp@1.0.5",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/escape-string-regexp@4.0.0",
+   "name": "escape-string-regexp",
+   "version": "4.0.0",
+   "purl": "pkg:npm/escape-string-regexp@4.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/escape-string-regexp@5.0.0",
+   "name": "escape-string-regexp",
+   "version": "5.0.0",
+   "purl": "pkg:npm/escape-string-regexp@5.0.0",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/ext-list@2.2.2",
+   "name": "ext-list",
+   "version": "2.2.2",
+   "purl": "pkg:npm/ext-list@2.2.2",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Kevin Mårtensson"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/ext-name@5.0.0",
+   "name": "ext-name",
+   "version": "5.0.0",
+   "purl": "pkg:npm/ext-name@5.0.0",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Kevin Mårtensson"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/extract-zip@2.0.1",
+   "name": "extract-zip",
+   "version": "2.0.1",
+   "purl": "pkg:npm/extract-zip@2.0.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-2-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "max ogden"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/fd-slicer@1.1.0",
+   "name": "fd-slicer",
+   "version": "1.1.0",
+   "purl": "pkg:npm/fd-slicer@1.1.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Andrew Kelley"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/fflate",
+   "name": "fflate",
+   "version": "NOASSERTION",
+   "purl": "pkg:npm/fflate",
+   "author": "Arjun Barrett",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "vendored-source"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "src/readers/epub/foliate/vendor/fflate.js"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "raw LICENSE file / upstream repo (audit 2026-11-26)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/filename-reserved-regex@2.0.0",
+   "name": "filename-reserved-regex",
+   "version": "2.0.0",
+   "purl": "pkg:npm/filename-reserved-regex@2.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/filenamify@4.3.0",
+   "name": "filenamify",
+   "version": "4.3.0",
+   "purl": "pkg:npm/filenamify@4.3.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/find-up@2.1.0",
+   "name": "find-up",
+   "version": "2.1.0",
+   "purl": "pkg:npm/find-up@2.1.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/flora-colossus@2.0.0",
+   "name": "flora-colossus",
+   "version": "2.0.0",
+   "purl": "pkg:npm/flora-colossus@2.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Samuel Attard"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/fs-extra@10.1.0",
+   "name": "fs-extra",
+   "version": "10.1.0",
+   "purl": "pkg:npm/fs-extra@10.1.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "JP Richardson"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/fs-extra@11.4.1",
+   "name": "fs-extra",
+   "version": "11.4.1",
+   "purl": "pkg:npm/fs-extra@11.4.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "JP Richardson"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/fs-extra@8.1.0",
+   "name": "fs-extra",
+   "version": "8.1.0",
+   "purl": "pkg:npm/fs-extra@8.1.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "JP Richardson"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/fs-extra@9.1.0",
+   "name": "fs-extra",
+   "version": "9.1.0",
+   "purl": "pkg:npm/fs-extra@9.1.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "JP Richardson"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/fs.realpath@1.0.0",
+   "name": "fs.realpath",
+   "version": "1.0.0",
+   "purl": "pkg:npm/fs.realpath@1.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Isaac Z. Schlueter"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/function-bind@1.1.2",
+   "name": "function-bind",
+   "version": "1.1.2",
+   "purl": "pkg:npm/function-bind@1.1.2",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Raynos"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/galactus@1.0.0",
+   "name": "galactus",
+   "version": "1.0.0",
+   "purl": "pkg:npm/galactus@1.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Samuel Attard"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/get-package-info@1.0.0",
+   "name": "get-package-info",
+   "version": "1.0.0",
+   "purl": "pkg:npm/get-package-info@1.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Rahat Ahmed"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/get-stream@5.2.0",
+   "name": "get-stream",
+   "version": "5.2.0",
+   "purl": "pkg:npm/get-stream@5.2.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/glob@7.2.3",
+   "name": "glob",
+   "version": "7.2.3",
+   "purl": "pkg:npm/glob@7.2.3",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Isaac Z. Schlueter"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/global-agent@3.0.0",
+   "name": "global-agent",
+   "version": "3.0.0",
+   "purl": "pkg:npm/global-agent@3.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-3-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Gajus Kuizinas"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/globalthis@1.0.4",
+   "name": "globalthis",
+   "version": "1.0.4",
+   "purl": "pkg:npm/globalthis@1.0.4",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Jordan Harband"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/gopd@1.2.0",
+   "name": "gopd",
+   "version": "1.2.0",
+   "purl": "pkg:npm/gopd@1.2.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Jordan Harband"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/got@11.8.6",
+   "name": "got",
+   "version": "11.8.6",
+   "purl": "pkg:npm/got@11.8.6",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/graceful-fs@4.2.12",
+   "name": "graceful-fs",
+   "version": "4.2.12",
+   "purl": "pkg:npm/graceful-fs@4.2.12",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "BlueOak-1.0.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/has-property-descriptors@1.0.2",
+   "name": "has-property-descriptors",
+   "version": "1.0.2",
+   "purl": "pkg:npm/has-property-descriptors@1.0.2",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Jordan Harband"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/hasown@2.0.4",
+   "name": "hasown",
+   "version": "2.0.4",
+   "purl": "pkg:npm/hasown@2.0.4",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Jordan Harband"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/hosted-git-info@2.8.9",
+   "name": "hosted-git-info",
+   "version": "2.8.9",
+   "purl": "pkg:npm/hosted-git-info@2.8.9",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Rebecca Turner"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/html-encoding-sniffer@7.0.0",
+   "name": "html-encoding-sniffer",
+   "version": "7.0.0",
+   "purl": "pkg:npm/html-encoding-sniffer@7.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Domenic Denicola"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/http-cache-semantics@4.3.0",
+   "name": "http-cache-semantics",
+   "version": "4.3.0",
+   "purl": "pkg:npm/http-cache-semantics@4.3.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-2-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Kornel Lesiński"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/http2-wrapper@1.0.3",
+   "name": "http2-wrapper",
+   "version": "1.0.3",
+   "purl": "pkg:npm/http2-wrapper@1.0.3",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Szymon Marczak"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/inflight@1.0.6",
+   "name": "inflight",
+   "version": "1.0.6",
+   "purl": "pkg:npm/inflight@1.0.6",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Isaac Z. Schlueter"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/inherits@2.0.4",
+   "name": "inherits",
+   "version": "2.0.4",
+   "purl": "pkg:npm/inherits@2.0.4",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/is-alphabetical@2.0.1",
+   "name": "is-alphabetical",
+   "version": "2.0.1",
+   "purl": "pkg:npm/is-alphabetical@2.0.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Titus Wormer"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/is-alphanumerical@2.0.1",
+   "name": "is-alphanumerical",
+   "version": "2.0.1",
+   "purl": "pkg:npm/is-alphanumerical@2.0.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Titus Wormer"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/is-arrayish@0.2.1",
+   "name": "is-arrayish",
+   "version": "0.2.1",
+   "purl": "pkg:npm/is-arrayish@0.2.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Qix"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/is-core-module@2.18.0",
+   "name": "is-core-module",
+   "version": "2.18.0",
+   "purl": "pkg:npm/is-core-module@2.18.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Jordan Harband"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/is-decimal@2.0.1",
+   "name": "is-decimal",
+   "version": "2.0.1",
+   "purl": "pkg:npm/is-decimal@2.0.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Titus Wormer"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/is-docker@2.2.1",
+   "name": "is-docker",
+   "version": "2.2.1",
+   "purl": "pkg:npm/is-docker@2.2.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/is-plain-obj@1.1.0",
+   "name": "is-plain-obj",
+   "version": "1.1.0",
+   "purl": "pkg:npm/is-plain-obj@1.1.0",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/is-potential-custom-element-name@1.0.1",
+   "name": "is-potential-custom-element-name",
+   "version": "1.0.1",
+   "purl": "pkg:npm/is-potential-custom-element-name@1.0.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Mathias Bynens"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/is-safe-filename@0.1.1",
+   "name": "is-safe-filename",
+   "version": "0.1.1",
+   "purl": "pkg:npm/is-safe-filename@0.1.1",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/is-wsl@2.2.0",
+   "name": "is-wsl",
+   "version": "2.2.0",
+   "purl": "pkg:npm/is-wsl@2.2.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/isbinaryfile@4.0.10",
+   "name": "isbinaryfile",
+   "version": "4.0.10",
+   "purl": "pkg:npm/isbinaryfile@4.0.10",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/isexe@2.0.0",
+   "name": "isexe",
+   "version": "2.0.0",
+   "purl": "pkg:npm/isexe@2.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Isaac Z. Schlueter"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/jsdom@31.0.1",
+   "name": "jsdom",
+   "version": "31.0.1",
+   "purl": "pkg:npm/jsdom@31.0.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "direct"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/json-buffer@3.0.1",
+   "name": "json-buffer",
+   "version": "3.0.1",
+   "purl": "pkg:npm/json-buffer@3.0.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Dominic Tarr"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/json-stringify-safe@5.0.1",
+   "name": "json-stringify-safe",
+   "version": "5.0.1",
+   "purl": "pkg:npm/json-stringify-safe@5.0.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Isaac Z. Schlueter"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/jsonfile@4.0.0",
+   "name": "jsonfile",
+   "version": "4.0.0",
+   "purl": "pkg:npm/jsonfile@4.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "JP Richardson"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/jsonfile@6.2.1",
+   "name": "jsonfile",
+   "version": "6.2.1",
+   "purl": "pkg:npm/jsonfile@6.2.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "JP Richardson"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/junk@3.1.0",
+   "name": "junk",
+   "version": "3.1.0",
+   "purl": "pkg:npm/junk@3.1.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/keyv@4.5.4",
+   "name": "keyv",
+   "version": "4.5.4",
+   "purl": "pkg:npm/keyv@4.5.4",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Jared Wray"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/load-json-file@2.0.0",
+   "name": "load-json-file",
+   "version": "2.0.0",
+   "purl": "pkg:npm/load-json-file@2.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/locate-path@2.0.0",
+   "name": "locate-path",
+   "version": "2.0.0",
+   "purl": "pkg:npm/locate-path@2.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/lodash.get@4.4.2",
+   "name": "lodash.get",
+   "version": "4.4.2",
+   "purl": "pkg:npm/lodash.get@4.4.2",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "John-David Dalton"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/lowercase-keys@2.0.0",
+   "name": "lowercase-keys",
+   "version": "2.0.0",
+   "purl": "pkg:npm/lowercase-keys@2.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/lru-cache@11.5.3",
+   "name": "lru-cache",
+   "version": "11.5.3",
+   "purl": "pkg:npm/lru-cache@11.5.3",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "BlueOak-1.0.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Isaac Z. Schlueter"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/matcher@3.0.0",
+   "name": "matcher",
+   "version": "3.0.0",
+   "purl": "pkg:npm/matcher@3.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/mime-db@1.54.0",
+   "name": "mime-db",
+   "version": "1.54.0",
+   "purl": "pkg:npm/mime-db@1.54.0",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/mimic-response@1.0.1",
+   "name": "mimic-response",
+   "version": "1.0.1",
+   "purl": "pkg:npm/mimic-response@1.0.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/mimic-response@3.1.0",
+   "name": "mimic-response",
+   "version": "3.1.0",
+   "purl": "pkg:npm/mimic-response@3.1.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/minimatch@3.1.5",
+   "name": "minimatch",
+   "version": "3.1.5",
+   "purl": "pkg:npm/minimatch@3.1.5",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Isaac Z. Schlueter"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/minimist@1.2.8",
+   "name": "minimist",
+   "version": "1.2.8",
+   "purl": "pkg:npm/minimist@1.2.8",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "James Halliday"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/ms@2.0.0",
+   "name": "ms",
+   "version": "2.0.0",
+   "purl": "pkg:npm/ms@2.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/ms@2.1.3",
+   "name": "ms",
+   "version": "2.1.3",
+   "purl": "pkg:npm/ms@2.1.3",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/normalize-package-data@2.5.0",
+   "name": "normalize-package-data",
+   "version": "2.5.0",
+   "purl": "pkg:npm/normalize-package-data@2.5.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-2-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Meryn Stol"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/normalize-url@6.1.0",
+   "name": "normalize-url",
+   "version": "6.1.0",
+   "purl": "pkg:npm/normalize-url@6.1.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/object-keys@1.1.1",
+   "name": "object-keys",
+   "version": "1.1.1",
+   "purl": "pkg:npm/object-keys@1.1.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Jordan Harband"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/once@1.4.0",
+   "name": "once",
+   "version": "1.4.0",
+   "purl": "pkg:npm/once@1.4.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Isaac Z. Schlueter"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/p-cancelable@2.1.1",
+   "name": "p-cancelable",
+   "version": "2.1.1",
+   "purl": "pkg:npm/p-cancelable@2.1.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/p-limit@1.3.0",
+   "name": "p-limit",
+   "version": "1.3.0",
+   "purl": "pkg:npm/p-limit@1.3.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/p-locate@2.0.0",
+   "name": "p-locate",
+   "version": "2.0.0",
+   "purl": "pkg:npm/p-locate@2.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/p-try@1.0.0",
+   "name": "p-try",
+   "version": "1.0.0",
+   "purl": "pkg:npm/p-try@1.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/parse-author@2.0.0",
+   "name": "parse-author",
+   "version": "2.0.0",
+   "purl": "pkg:npm/parse-author@2.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Jon Schlinkert"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/parse-json@2.2.0",
+   "name": "parse-json",
+   "version": "2.2.0",
+   "purl": "pkg:npm/parse-json@2.2.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/parse5-parser-stream@8.1.1",
+   "name": "parse5-parser-stream",
+   "version": "8.1.1",
+   "purl": "pkg:npm/parse5-parser-stream@8.1.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Ivan Nikulin"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/parse5@8.1.1",
+   "name": "parse5",
+   "version": "8.1.1",
+   "purl": "pkg:npm/parse5@8.1.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Ivan Nikulin"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/path-exists@3.0.0",
+   "name": "path-exists",
+   "version": "3.0.0",
+   "purl": "pkg:npm/path-exists@3.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/path-exists@5.0.0",
+   "name": "path-exists",
+   "version": "5.0.0",
+   "purl": "pkg:npm/path-exists@5.0.0",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/path-is-absolute@1.0.1",
+   "name": "path-is-absolute",
+   "version": "1.0.1",
+   "purl": "pkg:npm/path-is-absolute@1.0.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/path-key@3.1.1",
+   "name": "path-key",
+   "version": "3.1.1",
+   "purl": "pkg:npm/path-key@3.1.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/path-parse@1.0.7",
+   "name": "path-parse",
+   "version": "1.0.7",
+   "purl": "pkg:npm/path-parse@1.0.7",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Javier Blanco"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/path-type@2.0.0",
+   "name": "path-type",
+   "version": "2.0.0",
+   "purl": "pkg:npm/path-type@2.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/pdfjs-dist@3.11.174",
+   "name": "pdfjs-dist",
+   "version": "3.11.174",
+   "purl": "pkg:npm/pdfjs-dist@3.11.174",
+   "author": "Mozilla Foundation",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:distribution",
+     "value": "vendored-source"
+    },
+    {
+     "name": "nanodesk:path",
+     "value": "src/readers/pdf/build+web"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "raw LICENSE file / upstream repo (audit 2026-11-26)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/pend@1.2.0",
+   "name": "pend",
+   "version": "1.2.0",
+   "purl": "pkg:npm/pend@1.2.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Andrew Kelley"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/pify@2.3.0",
+   "name": "pify",
+   "version": "2.3.0",
+   "purl": "pkg:npm/pify@2.3.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/playwright-core@1.65.1",
+   "name": "playwright-core",
+   "version": "1.65.1",
+   "purl": "pkg:npm/playwright-core@1.65.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Microsoft Corporation"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/playwright@1.65.1",
+   "name": "playwright",
+   "version": "1.65.1",
+   "purl": "pkg:npm/playwright@1.65.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Microsoft Corporation"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/plist@3.1.1",
+   "name": "plist",
+   "version": "3.1.1",
+   "purl": "pkg:npm/plist@3.1.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Nathan Rajlich"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/progress@2.0.3",
+   "name": "progress",
+   "version": "2.0.3",
+   "purl": "pkg:npm/progress@2.0.3",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "TJ Holowaychuk"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/pump@3.0.4",
+   "name": "pump",
+   "version": "3.0.4",
+   "purl": "pkg:npm/pump@3.0.4",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Mathias Buus Madsen"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/punycode@2.3.1",
+   "name": "punycode",
+   "version": "2.3.1",
+   "purl": "pkg:npm/punycode@2.3.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Mathias Bynens"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/pupa@3.3.0",
+   "name": "pupa",
+   "version": "3.3.0",
+   "purl": "pkg:npm/pupa@3.3.0",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/quick-lru@5.1.1",
+   "name": "quick-lru",
+   "version": "5.1.1",
+   "purl": "pkg:npm/quick-lru@5.1.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/rcedit@3.1.0",
+   "name": "rcedit",
+   "version": "3.1.0",
+   "purl": "pkg:npm/rcedit@3.1.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "direct"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/rcedit@4.0.1",
+   "name": "rcedit",
+   "version": "4.0.1",
+   "purl": "pkg:npm/rcedit@4.0.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "direct"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/read-pkg-up@2.0.0",
+   "name": "read-pkg-up",
+   "version": "2.0.0",
+   "purl": "pkg:npm/read-pkg-up@2.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/read-pkg@2.0.0",
+   "name": "read-pkg",
+   "version": "2.0.0",
+   "purl": "pkg:npm/read-pkg@2.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/resolve-alpn@1.2.1",
+   "name": "resolve-alpn",
+   "version": "1.2.1",
+   "purl": "pkg:npm/resolve-alpn@1.2.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Szymon Marczak"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/resolve@1.22.14",
+   "name": "resolve",
+   "version": "1.22.14",
+   "purl": "pkg:npm/resolve@1.22.14",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "James Halliday"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/responselike@2.0.1",
+   "name": "responselike",
+   "version": "2.0.1",
+   "purl": "pkg:npm/responselike@2.0.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "lukechilds"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/roarr@2.15.4",
+   "name": "roarr",
+   "version": "2.15.4",
+   "purl": "pkg:npm/roarr@2.15.4",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-3-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Gajus Kuizinas"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/saxes@6.0.0",
+   "name": "saxes",
+   "version": "6.0.0",
+   "purl": "pkg:npm/saxes@6.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Louis-Dominique Dubeau"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/semver-compare@1.0.0",
+   "name": "semver-compare",
+   "version": "1.0.0",
+   "purl": "pkg:npm/semver-compare@1.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "James Halliday"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/semver@5.7.3",
+   "name": "semver",
+   "version": "5.7.3",
+   "purl": "pkg:npm/semver@5.7.3",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "GitHub Inc."
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/semver@6.3.2",
+   "name": "semver",
+   "version": "6.3.2",
+   "purl": "pkg:npm/semver@6.3.2",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "GitHub Inc."
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/semver@7.8.6",
+   "name": "semver",
+   "version": "7.8.6",
+   "purl": "pkg:npm/semver@7.8.6",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "GitHub Inc."
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/serialize-error@7.0.1",
+   "name": "serialize-error",
+   "version": "7.0.1",
+   "purl": "pkg:npm/serialize-error@7.0.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/shebang-command@2.0.0",
+   "name": "shebang-command",
+   "version": "2.0.0",
+   "purl": "pkg:npm/shebang-command@2.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Kevin Mårtensson"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/shebang-regex@3.0.0",
+   "name": "shebang-regex",
+   "version": "3.0.0",
+   "purl": "pkg:npm/shebang-regex@3.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/sort-keys-length@1.0.1",
+   "name": "sort-keys-length",
+   "version": "1.0.1",
+   "purl": "pkg:npm/sort-keys-length@1.0.1",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Kevin Mårtensson"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/sort-keys@1.1.2",
+   "name": "sort-keys",
+   "version": "1.1.2",
+   "purl": "pkg:npm/sort-keys@1.1.2",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/spdx-correct@3.2.0",
+   "name": "spdx-correct",
+   "version": "3.2.0",
+   "purl": "pkg:npm/spdx-correct@3.2.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/spdx-exceptions@2.5.0",
+   "name": "spdx-exceptions",
+   "version": "2.5.0",
+   "purl": "pkg:npm/spdx-exceptions@2.5.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "CC-BY-3.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "The Linux Foundation"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/spdx-expression-parse@3.0.1",
+   "name": "spdx-expression-parse",
+   "version": "3.0.1",
+   "purl": "pkg:npm/spdx-expression-parse@3.0.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Kyle E. Mitchell"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/spdx-license-ids@3.0.24",
+   "name": "spdx-license-ids",
+   "version": "3.0.24",
+   "purl": "pkg:npm/spdx-license-ids@3.0.24",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "CC0-1.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Shinnosuke Watanabe"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/sprintf-js@1.1.3",
+   "name": "sprintf-js",
+   "version": "1.1.3",
+   "purl": "pkg:npm/sprintf-js@1.1.3",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-3-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Alexandru Mărășteanu"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/strip-bom@3.0.0",
+   "name": "strip-bom",
+   "version": "3.0.0",
+   "purl": "pkg:npm/strip-bom@3.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/strip-outer@1.0.1",
+   "name": "strip-outer",
+   "version": "1.0.1",
+   "purl": "pkg:npm/strip-outer@1.0.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/sumchecker@3.0.1",
+   "name": "sumchecker",
+   "version": "3.0.1",
+   "purl": "pkg:npm/sumchecker@3.0.1",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Mark Lee"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/supports-preserve-symlinks-flag@1.0.0",
+   "name": "supports-preserve-symlinks-flag",
+   "version": "1.0.0",
+   "purl": "pkg:npm/supports-preserve-symlinks-flag@1.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Jordan Harband"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/tldts-core@7.5.6",
+   "name": "tldts-core",
+   "version": "7.5.6",
+   "purl": "pkg:npm/tldts-core@7.5.6",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Rémi Berson"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/tldts-experimental@7.4.19",
+   "name": "tldts-experimental",
+   "version": "7.4.19",
+   "purl": "pkg:npm/tldts-experimental@7.4.19",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Rémi Berson"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/tldts@7.5.6",
+   "name": "tldts",
+   "version": "7.5.6",
+   "purl": "pkg:npm/tldts@7.5.6",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Rémi Berson"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/tough-cookie@6.1.0",
+   "name": "tough-cookie",
+   "version": "6.1.0",
+   "purl": "pkg:npm/tough-cookie@6.1.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-3-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Jeremy Stashewsky"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/tr46@7.0.0",
+   "name": "tr46",
+   "version": "7.0.0",
+   "purl": "pkg:npm/tr46@7.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sebastian Mayr"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/trim-repeated@1.0.0",
+   "name": "trim-repeated",
+   "version": "1.0.0",
+   "purl": "pkg:npm/trim-repeated@1.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/type-fest@0.13.1",
+   "name": "type-fest",
+   "version": "0.13.1",
+   "purl": "pkg:npm/type-fest@0.13.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "expression": "(MIT OR CC0-1.0)"
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/undici-types@7.24.6",
+   "name": "undici-types",
+   "version": "7.24.6",
+   "purl": "pkg:npm/undici-types@7.24.6",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/undici@7.30.2",
+   "name": "undici",
+   "version": "7.30.2",
+   "purl": "pkg:npm/undici@7.30.2",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/undici@8.13.1",
+   "name": "undici",
+   "version": "8.13.1",
+   "purl": "pkg:npm/undici@8.13.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/universalify@0.1.2",
+   "name": "universalify",
+   "version": "0.1.2",
+   "purl": "pkg:npm/universalify@0.1.2",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Ryan Zimmerman"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/universalify@2.0.1",
+   "name": "universalify",
+   "version": "2.0.1",
+   "purl": "pkg:npm/universalify@2.0.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Ryan Zimmerman"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/unused-filename@4.0.1",
+   "name": "unused-filename",
+   "version": "4.0.1",
+   "purl": "pkg:npm/unused-filename@4.0.1",
+   "scope": "required",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "runtime"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sindre Sorhus"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/validate-npm-package-license@3.0.4",
+   "name": "validate-npm-package-license",
+   "version": "3.0.4",
+   "purl": "pkg:npm/validate-npm-package-license@3.0.4",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Kyle E. Mitchell"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/w3c-xmlserializer@6.0.0",
+   "name": "w3c-xmlserializer",
+   "version": "6.0.0",
+   "purl": "pkg:npm/w3c-xmlserializer@6.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ]
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/webidl-conversions@8.0.1",
+   "name": "webidl-conversions",
+   "version": "8.0.1",
+   "purl": "pkg:npm/webidl-conversions@8.0.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "BSD-2-Clause"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Domenic Denicola"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/whatwg-mimetype@5.0.0",
+   "name": "whatwg-mimetype",
+   "version": "5.0.0",
+   "purl": "pkg:npm/whatwg-mimetype@5.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Domenic Denicola"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/whatwg-url@17.3.0",
+   "name": "whatwg-url",
+   "version": "17.3.0",
+   "purl": "pkg:npm/whatwg-url@17.3.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Sebastian Mayr"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/which@2.0.2",
+   "name": "which",
+   "version": "2.0.2",
+   "purl": "pkg:npm/which@2.0.2",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Isaac Z. Schlueter"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/wrappy@1.0.2",
+   "name": "wrappy",
+   "version": "1.0.2",
+   "purl": "pkg:npm/wrappy@1.0.2",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Isaac Z. Schlueter"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/xml-name-validator@5.0.0",
+   "name": "xml-name-validator",
+   "version": "5.0.0",
+   "purl": "pkg:npm/xml-name-validator@5.0.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "Apache-2.0"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Domenic Denicola"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/xmlbuilder@15.1.1",
+   "name": "xmlbuilder",
+   "version": "15.1.1",
+   "purl": "pkg:npm/xmlbuilder@15.1.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Ozgur Ozcitak"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/xmlchars@2.2.0",
+   "name": "xmlchars",
+   "version": "2.2.0",
+   "purl": "pkg:npm/xmlchars@2.2.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Louis-Dominique Dubeau"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/yargs-parser@21.1.1",
+   "name": "yargs-parser",
+   "version": "21.1.1",
+   "purl": "pkg:npm/yargs-parser@21.1.1",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "ISC"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Ben Coe"
+  },
+  {
+   "type": "library",
+   "bom-ref": "pkg:npm/yauzl@2.10.0",
+   "name": "yauzl",
+   "version": "2.10.0",
+   "purl": "pkg:npm/yauzl@2.10.0",
+   "scope": "optional",
+   "licenses": [
+    {
+     "license": {
+      "id": "MIT"
+     }
+    }
+   ],
+   "properties": [
+    {
+     "name": "nanodesk:dependency-type",
+     "value": "transitive"
+    },
+    {
+     "name": "nanodesk:distribution",
+     "value": "dev-only"
+    },
+    {
+     "name": "nanodesk:evidence",
+     "value": "npm registry (license) + package-lock.json (version/integrity)"
+    }
+   ],
+   "author": "Josh Wolfe"
+  }
+ ],
+ "dependencies": [
+  {
+   "ref": "pkg:npm/nanodesk@1.9.6",
+   "dependsOn": [
+    "bin:resources/aria2/aria2c.exe",
+    "bin:resources/bin/ffmpeg.exe (+7 DLLs)",
+    "bin:resources/bin/yt-dlp.exe",
+    "bin:resources/clamav/clamscan.exe",
+    "bin:resources/clamav/freshclam.exe",
+    "bin:resources/tor/win/tor/tor.exe",
+    "data:filter:badware",
+    "data:filter:easylist",
+    "data:filter:easyprivacy",
+    "data:filter:privacy",
+    "data:filter:quickfixes",
+    "data:filter:resourceabuse",
+    "data:filter:resources",
+    "data:filter:ublock",
+    "data:filter:ublock2020",
+    "data:filter:ublock2021",
+    "data:filter:ublock2022",
+    "data:filter:ublock2023",
+    "data:filter:ublock2024",
+    "data:filter:ublock2025",
+    "data:filter:unbreak",
+    "pkg:github/gildas-lormeau/zip.js",
+    "pkg:github/johnfactotum/foliate-js",
+    "pkg:npm/%40electron%2Fasar@3.4.1",
+    "pkg:npm/%40electron%2Fget@5.1.0",
+    "pkg:npm/%40electron%2Fnotarize@1.2.4",
+    "pkg:npm/%40electron%2Fosx-sign@1.3.3",
+    "pkg:npm/%40electron%2Funiversal@1.5.1",
+    "pkg:npm/%40electron-internal%2Fextract-zip@1.0.9",
+    "pkg:npm/%40exodus%2Fbytes@1.16.0",
+    "pkg:npm/%40ghostery%2Fadblocker-content@2.20.3",
+    "pkg:npm/%40ghostery%2Fadblocker-electron-preload@2.20.3",
+    "pkg:npm/%40ghostery%2Fadblocker-electron@2.20.3",
+    "pkg:npm/%40ghostery%2Fadblocker-extended-selectors@2.20.3",
+    "pkg:npm/%40ghostery%2Fadblocker@2.20.3",
+    "pkg:npm/%40ghostery%2Furl-parser@1.3.1",
+    "pkg:npm/%40malept%2Fcross-spawn-promise@1.1.1",
+    "pkg:npm/%40playwright%2Ftest@1.65.1",
+    "pkg:npm/%40remusao%2Fguess-url-type@2.1.0",
+    "pkg:npm/%40remusao%2Fsmall@2.1.0",
+    "pkg:npm/%40remusao%2Fsmaz-compress@2.2.0",
+    "pkg:npm/%40remusao%2Fsmaz-decompress@2.2.0",
+    "pkg:npm/%40remusao%2Fsmaz@2.2.0",
+    "pkg:npm/%40remusao%2Ftrie@2.1.0",
+    "pkg:npm/%40sindresorhus%2Fis@4.6.0",
+    "pkg:npm/%40szmarczak%2Fhttp-timer@4.0.6",
+    "pkg:npm/%40types%2Fcacheable-request@6.0.3",
+    "pkg:npm/%40types%2Fhttp-cache-semantics@4.2.0",
+    "pkg:npm/%40types%2Fkeyv@3.1.4",
+    "pkg:npm/%40types%2Fnode@24.19.4",
+    "pkg:npm/%40types%2Fresponselike@1.0.3",
+    "pkg:npm/%40types%2Fyauzl@2.10.3",
+    "pkg:npm/%40xmldom%2Fxmldom@0.9.12",
+    "pkg:npm/at-least-node@1.0.0",
+    "pkg:npm/author-regex@1.0.0",
+    "pkg:npm/balanced-match@1.0.2",
+    "pkg:npm/base64-js@1.5.1",
+    "pkg:npm/bcp-47-match@2.0.3",
+    "pkg:npm/bcp-47@2.1.2",
+    "pkg:npm/bluebird@3.7.2",
+    "pkg:npm/boolean@3.2.0",
+    "pkg:npm/brace-expansion@1.1.22",
+    "pkg:npm/buffer-crc32@0.2.13",
+    "pkg:npm/buffer-equal@1.0.1",
+    "pkg:npm/cacheable-lookup@5.0.4",
+    "pkg:npm/cacheable-request@7.0.4",
+    "pkg:npm/clone-response@1.0.3",
+    "pkg:npm/commander@5.1.0",
+    "pkg:npm/compare-version@0.1.2",
+    "pkg:npm/concat-map@0.0.1",
+    "pkg:npm/cross-spawn-windows-exe@1.2.0",
+    "pkg:npm/cross-spawn@7.0.6",
+    "pkg:npm/data-urls@8.0.0",
+    "pkg:npm/debug@4.4.3",
+    "pkg:npm/decimal.js@10.6.0",
+    "pkg:npm/decompress-response@6.0.0",
+    "pkg:npm/defer-to-connect@2.0.1",
+    "pkg:npm/define-data-property@1.1.4",
+    "pkg:npm/define-properties@1.2.1",
+    "pkg:npm/detect-node@2.1.0",
+    "pkg:npm/dir-compare@3.3.0",
+    "pkg:npm/electron-dl@5.0.0",
+    "pkg:npm/electron-packager@17.1.2",
+    "pkg:npm/electron@45.4.1",
+    "pkg:npm/end-of-stream@1.4.5",
+    "pkg:npm/entities@9.0.0",
+    "pkg:npm/env-paths@3.0.0",
+    "pkg:npm/error-ex@1.3.4",
+    "pkg:npm/es-define-property@1.0.1",
+    "pkg:npm/es-errors@1.3.0",
+    "pkg:npm/es6-error@4.1.1",
+    "pkg:npm/escape-goat@4.0.0",
+    "pkg:npm/escape-string-regexp@1.0.5",
+    "pkg:npm/ext-list@2.2.2",
+    "pkg:npm/ext-name@5.0.0",
+    "pkg:npm/extract-zip@2.0.1",
+    "pkg:npm/fd-slicer@1.1.0",
+    "pkg:npm/fflate",
+    "pkg:npm/filename-reserved-regex@2.0.0",
+    "pkg:npm/filenamify@4.3.0",
+    "pkg:npm/find-up@2.1.0",
+    "pkg:npm/flora-colossus@2.0.0",
+    "pkg:npm/fs-extra@11.4.1",
+    "pkg:npm/fs.realpath@1.0.0",
+    "pkg:npm/function-bind@1.1.2",
+    "pkg:npm/galactus@1.0.0",
+    "pkg:npm/get-package-info@1.0.0",
+    "pkg:npm/get-stream@5.2.0",
+    "pkg:npm/glob@7.2.3",
+    "pkg:npm/global-agent@3.0.0",
+    "pkg:npm/globalthis@1.0.4",
+    "pkg:npm/gopd@1.2.0",
+    "pkg:npm/got@11.8.6",
+    "pkg:npm/graceful-fs@4.2.12",
+    "pkg:npm/has-property-descriptors@1.0.2",
+    "pkg:npm/hasown@2.0.4",
+    "pkg:npm/hosted-git-info@2.8.9",
+    "pkg:npm/html-encoding-sniffer@7.0.0",
+    "pkg:npm/http-cache-semantics@4.3.0",
+    "pkg:npm/http2-wrapper@1.0.3",
+    "pkg:npm/inflight@1.0.6",
+    "pkg:npm/inherits@2.0.4",
+    "pkg:npm/is-alphabetical@2.0.1",
+    "pkg:npm/is-alphanumerical@2.0.1",
+    "pkg:npm/is-arrayish@0.2.1",
+    "pkg:npm/is-core-module@2.18.0",
+    "pkg:npm/is-decimal@2.0.1",
+    "pkg:npm/is-docker@2.2.1",
+    "pkg:npm/is-plain-obj@1.1.0",
+    "pkg:npm/is-potential-custom-element-name@1.0.1",
+    "pkg:npm/is-safe-filename@0.1.1",
+    "pkg:npm/is-wsl@2.2.0",
+    "pkg:npm/isbinaryfile@4.0.10",
+    "pkg:npm/isexe@2.0.0",
+    "pkg:npm/jsdom@31.0.1",
+    "pkg:npm/json-buffer@3.0.1",
+    "pkg:npm/json-stringify-safe@5.0.1",
+    "pkg:npm/jsonfile@6.2.1",
+    "pkg:npm/junk@3.1.0",
+    "pkg:npm/keyv@4.5.4",
+    "pkg:npm/load-json-file@2.0.0",
+    "pkg:npm/locate-path@2.0.0",
+    "pkg:npm/lodash.get@4.4.2",
+    "pkg:npm/lowercase-keys@2.0.0",
+    "pkg:npm/lru-cache@11.5.3",
+    "pkg:npm/matcher@3.0.0",
+    "pkg:npm/mime-db@1.54.0",
+    "pkg:npm/mimic-response@1.0.1",
+    "pkg:npm/minimatch@3.1.5",
+    "pkg:npm/minimist@1.2.8",
+    "pkg:npm/ms@2.1.3",
+    "pkg:npm/normalize-package-data@2.5.0",
+    "pkg:npm/normalize-url@6.1.0",
+    "pkg:npm/object-keys@1.1.1",
+    "pkg:npm/once@1.4.0",
+    "pkg:npm/p-cancelable@2.1.1",
+    "pkg:npm/p-limit@1.3.0",
+    "pkg:npm/p-locate@2.0.0",
+    "pkg:npm/p-try@1.0.0",
+    "pkg:npm/parse-author@2.0.0",
+    "pkg:npm/parse-json@2.2.0",
+    "pkg:npm/parse5-parser-stream@8.1.1",
+    "pkg:npm/parse5@8.1.1",
+    "pkg:npm/path-exists@3.0.0",
+    "pkg:npm/path-is-absolute@1.0.1",
+    "pkg:npm/path-key@3.1.1",
+    "pkg:npm/path-parse@1.0.7",
+    "pkg:npm/path-type@2.0.0",
+    "pkg:npm/pdfjs-dist@3.11.174",
+    "pkg:npm/pend@1.2.0",
+    "pkg:npm/pify@2.3.0",
+    "pkg:npm/playwright-core@1.65.1",
+    "pkg:npm/playwright@1.65.1",
+    "pkg:npm/plist@3.1.1",
+    "pkg:npm/progress@2.0.3",
+    "pkg:npm/pump@3.0.4",
+    "pkg:npm/punycode@2.3.1",
+    "pkg:npm/pupa@3.3.0",
+    "pkg:npm/quick-lru@5.1.1",
+    "pkg:npm/rcedit@4.0.1",
+    "pkg:npm/read-pkg-up@2.0.0",
+    "pkg:npm/read-pkg@2.0.0",
+    "pkg:npm/resolve-alpn@1.2.1",
+    "pkg:npm/resolve@1.22.14",
+    "pkg:npm/responselike@2.0.1",
+    "pkg:npm/roarr@2.15.4",
+    "pkg:npm/saxes@6.0.0",
+    "pkg:npm/semver-compare@1.0.0",
+    "pkg:npm/semver@7.8.6",
+    "pkg:npm/serialize-error@7.0.1",
+    "pkg:npm/shebang-command@2.0.0",
+    "pkg:npm/shebang-regex@3.0.0",
+    "pkg:npm/sort-keys-length@1.0.1",
+    "pkg:npm/sort-keys@1.1.2",
+    "pkg:npm/spdx-correct@3.2.0",
+    "pkg:npm/spdx-exceptions@2.5.0",
+    "pkg:npm/spdx-expression-parse@3.0.1",
+    "pkg:npm/spdx-license-ids@3.0.24",
+    "pkg:npm/sprintf-js@1.1.3",
+    "pkg:npm/strip-bom@3.0.0",
+    "pkg:npm/strip-outer@1.0.1",
+    "pkg:npm/sumchecker@3.0.1",
+    "pkg:npm/supports-preserve-symlinks-flag@1.0.0",
+    "pkg:npm/tldts-core@7.5.6",
+    "pkg:npm/tldts-experimental@7.4.19",
+    "pkg:npm/tldts@7.5.6",
+    "pkg:npm/tough-cookie@6.1.0",
+    "pkg:npm/tr46@7.0.0",
+    "pkg:npm/trim-repeated@1.0.0",
+    "pkg:npm/type-fest@0.13.1",
+    "pkg:npm/undici-types@7.24.6",
+    "pkg:npm/undici@7.30.2",
+    "pkg:npm/universalify@2.0.1",
+    "pkg:npm/unused-filename@4.0.1",
+    "pkg:npm/validate-npm-package-license@3.0.4",
+    "pkg:npm/w3c-xmlserializer@6.0.0",
+    "pkg:npm/webidl-conversions@8.0.1",
+    "pkg:npm/whatwg-mimetype@5.0.0",
+    "pkg:npm/whatwg-url@17.3.0",
+    "pkg:npm/which@2.0.2",
+    "pkg:npm/wrappy@1.0.2",
+    "pkg:npm/xml-name-validator@5.0.0",
+    "pkg:npm/xmlbuilder@15.1.1",
+    "pkg:npm/xmlchars@2.2.0",
+    "pkg:npm/yargs-parser@21.1.1",
+    "pkg:npm/yauzl@2.10.0"
+   ]
+  },
+  {
+   "ref": "pkg:npm/%40electron%2Fget@2.0.3",
+   "dependsOn": [
+    "pkg:npm/fs-extra@8.1.0",
+    "pkg:npm/semver@6.3.2"
+   ]
+  },
+  {
+   "ref": "pkg:npm/%40electron%2Fnotarize@1.2.4",
+   "dependsOn": [
+    "pkg:npm/fs-extra@9.1.0"
+   ]
+  },
+  {
+   "ref": "pkg:npm/%40electron%2Fosx-sign@1.3.3",
+   "dependsOn": [
+    "pkg:npm/fs-extra@10.1.0"
+   ]
+  },
+  {
+   "ref": "pkg:npm/%40electron%2Funiversal@1.5.1",
+   "dependsOn": [
+    "pkg:npm/fs-extra@9.1.0"
+   ]
+  },
+  {
+   "ref": "pkg:npm/decompress-response@6.0.0",
+   "dependsOn": [
+    "pkg:npm/mimic-response@3.1.0"
+   ]
+  },
+  {
+   "ref": "pkg:npm/electron-packager@17.1.2",
+   "dependsOn": [
+    "pkg:npm/%40electron%2Fget@2.0.3",
+    "pkg:npm/env-paths@2.2.1",
+    "pkg:npm/jsonfile@4.0.0",
+    "pkg:npm/rcedit@3.1.0",
+    "pkg:npm/universalify@0.1.2"
+   ]
+  },
+  {
+   "ref": "pkg:npm/flora-colossus@2.0.0",
+   "dependsOn": [
+    "pkg:npm/fs-extra@10.1.0"
+   ]
+  },
+  {
+   "ref": "pkg:npm/galactus@1.0.0",
+   "dependsOn": [
+    "pkg:npm/fs-extra@10.1.0"
+   ]
+  },
+  {
+   "ref": "pkg:npm/get-package-info@1.0.0",
+   "dependsOn": [
+    "pkg:npm/debug@2.6.9",
+    "pkg:npm/ms@2.0.0"
+   ]
+  },
+  {
+   "ref": "pkg:npm/jsdom@31.0.1",
+   "dependsOn": [
+    "pkg:npm/undici@8.13.1"
+   ]
+  },
+  {
+   "ref": "pkg:npm/matcher@3.0.0",
+   "dependsOn": [
+    "pkg:npm/escape-string-regexp@4.0.0"
+   ]
+  },
+  {
+   "ref": "pkg:npm/normalize-package-data@2.5.0",
+   "dependsOn": [
+    "pkg:npm/semver@5.7.3"
+   ]
+  },
+  {
+   "ref": "pkg:npm/unused-filename@4.0.1",
+   "dependsOn": [
+    "pkg:npm/escape-string-regexp@5.0.0",
+    "pkg:npm/path-exists@5.0.0"
+   ]
+  }
+ ]
+}

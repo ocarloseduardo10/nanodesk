@@ -2,10 +2,10 @@
  * NanoDesk — Security Gateway de downloads (1.6.0, FASE 6)
  * ==================================================================
  * Referências estudadas (sem copiar código):
- *  - ClamAV (github.com/Cisco-Talos/clamav, GPL-3.0): antivírus —
- *    usado SOMENTE como processo externo, se estiver instalado na
- *    máquina do usuário (clamscan/clamdscan no PATH ou caminho
- *    padrão do Windows). Nenhum binário é distribuído junto.
+ *  - ClamAV (github.com/Cisco-Talos/clamav, GPL-2.0; correção de licença
+ *    na auditoria de 2026-11-26 — ver THIRD_PARTY_NOTICES.md): antivírus —
+ *    usado como processo externo (PATH) ou pelo clamscan embutido no
+ *    build Windows (resources/clamav/). Nenhum binário está no repositório.
  *  - YARA (github.com/VirusTotal/yara, BSD-3): regras próprias —
  *    idem: binário externo + arquivo de regras informado pelo usuário.
  *  - URLCheck (TrianguloY): ideia de checagem antes de abrir.

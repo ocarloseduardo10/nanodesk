@@ -1,7 +1,8 @@
 /**
  * NanoDesk — Bloqueador de pop-ups ESTRTITO (1.8.8)
  * ==================================================================
- * Inspiração: schomery/popup-blocker (GPL-3.0). NENHUM código é
+ * Inspiração: schomery/popup-blocker (MPL-2.0; correção de licença na
+ * auditoria de 2026-11-26 — ver THIRD_PARTY_NOTICES.md). NENHUM código é
  * copiado — o conceito (interceptar window.open, HTMLAnchorElement.click,
  * HTMLFormElement.submit e iframes) é reimplementado como script
  * injetado no mundo principal da página.

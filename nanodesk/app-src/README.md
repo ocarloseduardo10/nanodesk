@@ -201,19 +201,25 @@ dados sensíveis.
 - **E2E** (`tests/e2e-electron.js`): fluxo de abas/leitores em Electron
   real (opcional, requer binário do Electron).
 
-## Licenças (resumo — veja LICENSES.md para a lista completa)
+## Licenças (resumo — veja THIRD_PARTY_NOTICES.md para o inventário completo e auditado)
 - Código próprio: MIT.
-- Executado dentro do app: Electron (MIT), @ghostery/adblocker (MPL-2.0),
-  electron-dl (MIT), pdf.js (Apache-2.0), foliate-js (MIT), tldts (MIT).
-- Listas de filtro: EasyList/EasyPrivacy (CC BY-SA 3.0), StevenBlack
-  hosts (MIT).
+- Executado dentro do app: Electron 45.4.1 (MIT), @ghostery/adblocker (MPL-2.0),
+  electron-dl (MIT), pdf.js 3.11.174 (Apache-2.0), foliate-js (MIT),
+  zip.js (BSD-3), fflate (MIT), tldts (MIT).
+- Listas de filtro: EasyList/EasyPrivacy (GPL-3.0+ OU CC-BY-SA-3.0+; uso sob
+  CC-BY-SA-3.0+), listas uBlock/uAssets ×11 (GPL-3.0), StevenBlack hosts (MIT).
 - Estudados como REFERÊNCIA (sem copiar código): uBlock Origin (GPL-3.0),
-  ClearURLs (MPL-2.0), CanvasBlocker (GPL-3.0), URLCheck (MPL-2.0),
-  RedirectGuard/Popup-Blocker-Pro (MIT), Bitwarden (GPL-3.0, via CLI
-  oficial), LibreTranslate (AGPL-3.0, via API HTTP), Mullvad (GPL-3.0),
+  PopUpOFF (Apache-2.0), Popup Blocker strict (MPL-2.0), ClearURLs (LGPL-3.0),
+  CanvasBlocker (MPL-2.0), URLCheck (CC-BY-4.0), RedirectGuard (MIT — não
+  verificado), Popup-Blocker-Pro (MIT), Consent-O-Matic (MIT), Bitwarden
+  (GPL-3.0, referência histórica — substituído pelo cofre nativo),
+  LibreTranslate (AGPL-3.0, via API HTTP), Mullvad (GPL-3.0),
   FreeTube/Invidious/Piped (AGPL-3.0, apps/serviços externos),
-  ClamAV (GPL-3.0, binário externo), YARA (BSD-3, binário externo),
-  yt-dlp (Unlicense, binário externo), StevenBlack hosts (MIT).
+  SponsorBlock (GPL-3.0, API).
+- Binários no build Windows (não no repositório): aria2 1.37.0 (GPL-2.0 +
+  OpenSSL exception), ClamAV 1.5.4 (GPL-2.0), FFmpeg 8.1 (LGPL-3.0,
+  build lgpl-shared), yt-dlp 2026.10.26 (Unlicense), Tor 16.0 (BSD-3-Clause),
+  YARA (BSD-3, binário externo). Procedência SHA-256 em *ORIGEM.txt.
 
 ## O que é gravado em disco (honesto)
 O NanoDesk usa partições de sessão **sem persistência** (cookies, localStorage e IndexedDB ficam só em RAM).

@@ -1,7 +1,8 @@
 /**
  * NanoDesk — Analisador de URLs (1.6.0, FASE 6 — Security Gateway)
  * ==================================================================
- * Conceitos do projeto aberto TrianguloY/URLCheck (MPL-2.0) e do
+ * Conceitos do projeto aberto TrianguloY/URLCheck (CC-BY-4.0; correção
+ * de licença na auditoria de 2026-11-26) e do
  * OWASP WSTG (4.1 "Test for Bypassing Authentication Schema"/análise
  * de entrada), reimplementados em código original (MIT NanoDesk):
  * heurística LOCAL de reputação de URL, sem consultar serviço

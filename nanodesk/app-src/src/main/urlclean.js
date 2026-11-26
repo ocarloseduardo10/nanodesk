@@ -2,7 +2,8 @@
  * NanoDesk — Limpeza de parâmetros de rastreamento (1.6.0, FASE 4)
  * ==================================================================
  * Conceito do projeto aberto ClearURLs (github.com/ClearURLs/Addon,
- * GPL-3.0) REIMPLEMENTADO do zero em código original (MIT NanoDesk):
+ * LGPL-3.0; correção de licença na auditoria de 2026-11-26)
+ * REIMPLEMENTADO do zero em código original (MIT NanoDesk):
  * nenhuma linha do ClearURLs é copiada — apenas a ideia de remover
  * parâmetros cuja única função é rastrear o clique entre sites.
  *

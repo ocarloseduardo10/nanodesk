@@ -2,7 +2,9 @@
  * NanoDesk — Proteção contra fingerprinting (1.6.0, FASE 4)
  * ==================================================================
  * Conceito do projeto aberto CanvasBlocker (github.com/kkapsner/
- * CanvasBlocker, GPL-3.0) reimplementado em código original (MIT),
+ * CanvasBlocker, MPL-2.0; correção de licença na auditoria de
+ * 2026-11-26 — ver THIRD_PARTY_NOTICES.md) reimplementado em código
+ * original (MIT),
  * seguindo a diretriz da especificação: REDUÇÃO de superfície de
  * identificação com CONSISTÊNCIA entre APIs — NÃO randomização
  * indiscriminada (que tornaria o navegador MAIS identificável).

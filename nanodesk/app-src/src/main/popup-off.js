@@ -2,7 +2,8 @@
  * NanoDesk — PopUpOFF nativo (1.9.6-e)
  * ==================================================================
  * Porta da LÓGICA do PopUpOFF v2.1.3 (RomanistHere/PopUpOFF, licença
- * MIT). NENHUM código é copiado verbatim — as heurísticas (modos,
+ * Apache-2.0; correção de licença na auditoria de 2026-11-26 — ver
+ * THIRD_PARTY_NOTICES.md). NENHUM código é copiado verbatim — as heurísticas (modos,
  * limites de área, listas de palavras e a whitelist embutida) foram
  * reimplementadas a partir do repositório para rodar como script
  * injetado no mundo principal da página, sem chrome.* (a extensão

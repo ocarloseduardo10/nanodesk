@@ -2,7 +2,8 @@
  * NanoDesk — Consent-O-Matic nativo (1.7.0)
  * ==================================================================
  * Baseado no projeto Consent-O-Matic (github.com/cavi-au/Consent-O-Matic,
- * MPL-2.0, © Cavi-Au / Aarhus University). NENHUM código é copiado:
+ * MIT, © CAVI / Aarhus University; correção de licença na auditoria de
+ * 2026-11-26 — ver THIRD_PARTY_NOTICES.md). NENHUM código é copiado:
  * é uma implementação própria da MESMA IDEIA — responder popups de
  * consentimento de cookies SEMPRE NEGANDO rastreadores, escolhendo o
  * nível máximo de privacidade disponível no site.
