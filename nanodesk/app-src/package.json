@@ -1,0 +1,33 @@
+{
+  "name": "nanodesk",
+  "productName": "NanoDesk",
+  "version": "1.9.6",
+  "description": "Navegador Electron ultraleve e privado: sessão 100% em memória, abas WebContentsView com sandbox, sessões isoladas (contêineres), perfil local opcional, bloqueador nativo + EasyList/EasyPrivacy (Ghostery) + StevenBlack hosts, limpeza de parâmetros de rastreamento (ClearURLs), anti-fingerprinting (CanvasBlocker), pop-ups (Popup-Blocker-Pro) e redirecionamentos (RedirectGuard), Security Gateway com análise de URLs e quarentena de downloads (ClamAV embutido + YARA + scanner nativo SHA-256/PE/strings), Network Manager (VPN, Tor SOCKS auto-start, DoH), leitores PDF (pdf.js) e EPUB/MOBI/FB2/CBZ (foliate-js), histórico pesquisável, favoritos com pastas/etiquetas, cofre de senhas NATIVO (AES-256-GCM + PBKDF2, sem CLI externa), LibreTranslate. 1.8.9: cofre de senhas embutido substitui a ponte por CLI do Bitwarden — cripto nativa (PBKDF2 600k + AES-256-GCM), auto-fill por botão flutuante + atalho, prompt de salvar credenciais após login, autolock por inatividade. 1.8.8: ClamAV embutido, scanner nativo, noredirect, cosmetic-cleanup, popup-blocker-strict, page-security, Tor auto-start, yt-dlp MP4, SponsorBlock, Consent-O-Matic, LanguageTool, LibraryTranslate. 1.9.6: download em lote respeita a sessão da aba (Tor/contêiner) — motores externos só com proxy Tor validado, sem fallback direto; camada CENTRAL de segurança para TODOS os engines (limites, destino, magic bytes, ClamAV/YARA, quarentena via Security Gateway).",
+  "main": "src/main/main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "selftest": "electron . --selftest",
+    "test": "node --test \"tests/*.test.js\"",
+    "test:e2e": "playwright test",
+    "dist:win": "electron-packager . NanoDesk --platform=win32 --arch=x64 --out=release --overwrite --ignore=\"^/tests($|/)\" --ignore=\"^/tools($|/)\" --ignore=\"^/package-lock\\.json$\" --ignore=\"^/assets/make_icon\\.py$\" --ignore=\"^/release($|/)\" --ignore=\"^/RELATORIO-DE-CORRECOES\" --ignore=\"^/CHANGELOG\\.md$\"",
+    "postdist:win": "node tools/set-pe-version.js && node tools/make-sha256sums.js release/NanoDesk-win32-x64",
+    "verify:sums": "node tools/make-sha256sums.js --check release/NanoDesk-win32-x64"
+  },
+  "author": "Projeto Academico NanoDesk",
+  "engines": {
+    "node": ">=22.12.0",
+    "npm": ">=10.0.0"
+  },
+  "dependencies": {
+    "@ghostery/adblocker-electron": "2.20.3",
+    "electron-dl": "5.0.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "electron": "45.4.1",
+    "electron-packager": "17.1.2",
+    "rcedit": "^4.0.1",
+    "jsdom": "^31.0.0"
+  }
+}

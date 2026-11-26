@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <!-- CSP: livros EPUB podem conter scripts — TODO script de fora é
+       bloqueado; só os módulos locais (foliate) rodam. O conteúdo do
+       livro é servido em blob: e herda esta CSP (sem scripts). -->
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-inline' blob:; img-src 'self' data: blob:; media-src 'self' blob:; font-src 'self' data: blob:; connect-src 'self' blob: data:; frame-src blob: 'self'; object-src 'none'; form-action 'none'; base-uri 'none'">
+  <title>Livro — NanoDesk</title>
+  <link rel="stylesheet" href="epub.css">
+</head>
+<body data-theme="claro">
+
+  <!-- barra do leitor -->
+  <header id="rdr-bar">
+    <button class="rbtn" id="b-open" title="Abrir livro… (EPUB, MOBI, AZW3, FB2, CBZ)">Abrir livro…</button>
+    <button class="rbtn" id="b-toc" title="Sumário">Sumário</button>
+    <span class="rsep"></span>
+    <button class="rbtn" id="b-fontdec" title="Diminuir letra">A−</button>
+    <button class="rbtn" id="b-fontinc" title="Aumentar letra">A+</button>
+    <button class="rbtn" id="b-flow" title="Alternar paginado/rolagem">Rolagem</button>
+    <button class="rbtn" id="b-theme" title="Tema: claro, sépia ou escuro">Escuro</button>
+    <span class="rtitle" id="r-title">Livro</span>
+    <input id="r-slider" type="range" min="0" max="1000" value="0" hidden
+           aria-label="Progresso do livro">
+    <span class="rpct" id="r-pct"></span>
+  </header>
+
+  <!-- sumário -->
+  <aside id="toc-panel" hidden>
+    <div class="toc-head">
+      <span>Sumário</span>
+      <button class="rbtn" id="b-toc-close" title="Fechar sumário">✕</button>
+    </div>
+    <div id="toc-body"></div>
+  </aside>
+
+  <!-- área do livro -->
+  <main id="rdr-main"></main>
+
+  <!-- tela inicial (sem livro) -->
+  <div id="open-screen">
+    <div class="open-box">
+      <div class="open-logo">N</div>
+      <h1>Leitor de ebooks do NanoDesk</h1>
+      <p>Arraste um arquivo aqui ou clique em “Abrir livro…”.</p>
+      <p class="open-fmt">Formatos: EPUB · MOBI · AZW3 · FB2 · CBZ<br>
+         <span>Tecnologia foliate-js · leitura 100% em memória — nada é
+         gravado no PC e o progresso não é guardado ao fechar.</span></p>
+      <button class="open-btn" id="b-open-big">Abrir livro…</button>
+    </div>
+  </div>
+
+  <script src="foliate/view.js" type="module"></script>
+  <script src="epub-app.js" type="module"></script>
+</body>
+</html>

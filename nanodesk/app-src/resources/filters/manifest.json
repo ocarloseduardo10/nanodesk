@@ -1,0 +1,98 @@
+{
+  "generatedAt": "2026-11-12T19:48:30.118Z",
+  "sources": {
+    "easylist": "https://easylist.to/easylist/easylist.txt",
+    "easyprivacy": "https://easylist.to/easylist/easyprivacy.txt",
+    "resources": "https://raw.githubusercontent.com/ghostery/adblocker/master/packages/adblocker/assets/ublock-origin/resources.json",
+    "ublock": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt",
+    "ublock2020": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2020.txt",
+    "ublock2021": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2021.txt",
+    "ublock2022": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2022.txt",
+    "ublock2023": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2023.txt",
+    "ublock2024": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2024.txt",
+    "ublock2025": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-2025.txt",
+    "badware": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt",
+    "privacy": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/privacy.txt",
+    "resourceabuse": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt",
+    "quickfixes": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/quick-fixes.txt",
+    "unbreak": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/unbreak.txt"
+  },
+  "license": "CC BY-SA 3.0 (EasyList/EasyPrivacy) + GPL-3.0 (uBlock Origin assets)",
+  "files": {
+    "easylist": {
+      "file": "easylist.txt",
+      "sha256": "f5cafe9d554221f12671caa803ded427cda7aef9afbcc250c54abe83f358962b",
+      "bytes": 2043995
+    },
+    "easyprivacy": {
+      "file": "easyprivacy.txt",
+      "sha256": "ff32d4c01a2e1c8fb4e77240f8a515c68fbc4184321349564852f418a64b84fc",
+      "bytes": 1516403
+    },
+    "resources": {
+      "file": "resources.json",
+      "sha256": "5ce0ce483f0e5514308ccb0240960a9dd7bfeab417debeef96960dce2c95f690",
+      "bytes": 183850
+    },
+    "ublock": {
+      "file": "ublock.txt",
+      "sha256": "73d674807c88016fef58ba055381efea22585faab1a262a6d5fbab3a0bb62ccd",
+      "bytes": 469901
+    },
+    "ublock2020": {
+      "file": "ublock-2020.txt",
+      "sha256": "f68b1fceccba46ae349f9db803b3fcd3b8b71234d9d80d0cc0259b9672340d96",
+      "bytes": 133246
+    },
+    "ublock2021": {
+      "file": "ublock-2021.txt",
+      "sha256": "0772b56c297919bbbd70caece419b3ff889a209b333f8ab12bf564747bf39059",
+      "bytes": 166428
+    },
+    "ublock2022": {
+      "file": "ublock-2022.txt",
+      "sha256": "135a3adc233c6a86f63c51b869c364e396f0dae59796cee65284f72b6e725430",
+      "bytes": 156645
+    },
+    "ublock2023": {
+      "file": "ublock-2023.txt",
+      "sha256": "a7297bb83f0bbc228210c32be82e3e892d8c7f3f3f87953196fd6c0d77b71cbd",
+      "bytes": 214006
+    },
+    "ublock2024": {
+      "file": "ublock-2024.txt",
+      "sha256": "c85e13315c08368c4e70127b5b0104ea772c81a2cedf2abfa2b0fc378a3592a0",
+      "bytes": 231170
+    },
+    "ublock2025": {
+      "file": "ublock-2025.txt",
+      "sha256": "04c238cbb699238a7853f63f33dca0594775e89b75e113de2609666688c9117d",
+      "bytes": 170210
+    },
+    "badware": {
+      "file": "badware.txt",
+      "sha256": "4c2348fb66ade9ee63ea7984d9c6435393b2e9065d0241ecaba7352f12f4b88f",
+      "bytes": 274011
+    },
+    "privacy": {
+      "file": "privacy.txt",
+      "sha256": "b9ef0a446d4d90c5bd00e4b0586c70414d6364c859dc022f6ee81833fc0781f0",
+      "bytes": 185855
+    },
+    "resourceabuse": {
+      "file": "resource-abuse.txt",
+      "sha256": "aaf7c0fdfbcc05aad0d53905d2a73dd8a36f71f05c9285e133c4e76ac61761d8",
+      "bytes": 9317
+    },
+    "quickfixes": {
+      "file": "quick-fixes.txt",
+      "sha256": "7bff2be1aed676a8ceb2208ce680367b86e10e579b4cbcc0a0f1003813dffc57",
+      "bytes": 86326
+    },
+    "unbreak": {
+      "file": "unbreak.txt",
+      "sha256": "0645b79f33dd0504a1e8c62c723dbb77edb82f2ae46b2a5edb88a9ea2bb8de24",
+      "bytes": 282145
+    }
+  }
+}

@@ -1,0 +1,236 @@
+NANODESK 1.9.6-b — PRIVACIDADE RIGOROSA POR PADRÃO + INTEGRIDADE DE DOWNLOADS
+=====================================================================
+Este topo descreve o COMPORTAMENTO ATUAL. O histórico das versões
+anteriores (1.9.3 e mais antigas) está marcado no fim do cabeçalho.
+
+== O QUE MUDOU NA 1.9.6-b ==
+1. COFRE DE SENHAS — DESLIGADO por padrão (privacidade rigorosa). Ao
+   ligar em Configurações, o cofre nasce EFÊMERO: só na RAM, nada em
+   disco, tudo some ao fechar. O arquivo cifrado nanodesk-vault.json
+   (AES-256-GCM + PBKDF2 600k) só volta a existir se você desligar
+   "Modo efêmero" de propósito. Cofre antigo de versão anterior NÃO é
+   apagado nem escondido — veja o aviso de instalação antiga abaixo.
+2. ARQUIVAR PÁGINA — nada digitado em formulários é preservado no
+   arquivo .html (senhas e campos ocultos nunca foram; agora NADA).
+3. CACHE DO BLOQUEADOR — vai para a pasta TEMPORÁRIA da sessão,
+   apagada ao fechar. "Guardar em disco" (userData) é opt-in.
+4. DOWNLOADS — um único registro por download (sem duplicidade no
+   painel; pausar/retomar funcionam no registro certo) e Security
+   Gateway FAIL-CLOSED: se a análise de segurança falha, o item fica
+   "ANÁLISE DE SEGURANÇA FALHOU", o arquivo vai para a quarentena e o
+   botão abrir não aparece. Com análise ligada, o aviso é "Download
+   concluído — analisando segurança…", nunca um "concluído" que afirme
+   segurança antes da política passar.
+5. GOPEED (opcional, desligado por padrão — só com NANODESK_GOPEED_URL
+   e NANODESK_GOPEED_TOKEN): aceita apenas loopback (127.0.0.1/localhost)
+   por HTTP; host remoto exige NANODESK_GOPEED_ALLOW_REMOTE=1 E https
+   com TLS REAL (a porta não liga TLS — o módulo que liga). Para CA
+   própria: NANODESK_GOPEED_TLS_CA=/caminho/ca.pem (a verificação do
+   certificado nunca é desligada). Redirects são recusados e o token
+   Bearer nunca trafega em plaintext nem aparece em logs/erros.
+6. MODAIS E OVERLAYS (PopUpOFF nativo, 1.9.6-e): porta da lógica do
+   PopUpOFF v2.1.3 (MIT) para matar modais de DOM que o bloqueador de
+   janelas não alcança — avisos anti-bloqueador (Funding Choices/globo,
+   como o do g1), overlays de tela cheia e banners de cookie. Modos em
+   Configurações → Proteções: Desligado / Delicado / Moderado /
+   AGRESSIVO (padrão: remove todo elemento fixo/sticky visível, que é
+   o único modo que derruba o modal inteiro do globo). Whitelist
+   embutida (Google, YouTube, WhatsApp, e-commerce etc.) e páginas de
+   login/banco ficam de fora. Funciona em novas páginas após trocar o
+   modo.
+
+== AVISO DE PRIVACIDADE (1.9.6-b — SUBSTITUI o aviso da 1.8.11) ==
+O padrão agora é ZERO dados sensíveis no disco, sem exceções escondidas:
+  • Cofre: desligado; ligado = só RAM (efêmero). Persistir é opt-in.
+  • Cache do bloqueador: pasta temporária da sessão; disco é opt-in.
+  • Cookies, histórico e sessões: só na RAM (como nas versões recentes).
+  • "Perfil local" (Configurações) persiste configurações + favoritos —
+    continua DESLIGADO por padrão e você decide.
+INSTALAÇÃO ANTIGA (atualização de versão): o NanoDesk NÃO apaga nada
+sem seu consentimento. Se detectar resquícios de versões anteriores
+(cofre cifrado em disco OU perfil local ligado), mostra um AVISO CLARO
+na primeira abertura dizendo exatamente o que existe e onde desligar ou
+apagar (Configurações → Cofre / Perfil local). Enquanto você não
+revisar esse aviso, não assuma "zero dados sensíveis" numa instalação
+antiga — o aviso existe justamente para você verificar o estado
+anterior e decidir.
+
+HISTÓRICO — versões anteriores (o texto abaixo descreve cada versão NA
+ÉPOCA em que foi lançada; onde conflitar com o topo, vale o topo):
+
+NOVIDADE 1.9.3 — TERCEIRA AUDITORIA: corrigida a PERDA de settings.json/favorites.json com perfil local ligado (ocorria a cada reinício),
+leituras sem teto, saída de scanners limitada, cookies com contexto desconhecido, PAINEL DE MOTORES DE VARREDURA (Segurança) e
+Verificar-NanoDesk.ps1 (confere o pacote). O exe continua SEM assinatura Authenticode: veja ASSINATURA.md.
+
+NOVIDADE 1.9.2 — SEGUNDA AUDITORIA verificada e corrigida: leituras de rede com teto, pop-ups por origem completa, cookies de
+terceiros (requisição + Set-Cookie), botão do cofre sem canal forjável, senha-mestra de 14+ caracteres, scanner PE real, ClamAV
+com base pelo Tor/persistente. Sem ClamAV o download aparece como 'SEM varredura antivírus'. Veja RELATORIO-DE-CORRECOES-1.9.2.txt
+e TESTE-MANUAL-WINDOWS.md (o que ainda precisa ser testado no Windows).
+
+NOVIDADE 1.9.1 — TECLADO E SENHAS: auditoria + anti-keylogger. A senha do login não fica mais em texto puro na página
+(captura movida para o mundo isolado), guarda que esconde as teclas de campos de senha dos scripts do site, teclado virtual
+embaralhado para a senha-mestra do cofre, cópia de senha com limpeza segura. Limites honestos: PROTECAO-TECLADO.md.
+
+NOVIDADE 1.9.0 — ARQUIVAR PÁGINA (arquivo único, nativo e privado): botão na barra / Ctrl+Alt+S / clique direito.
+Salva a página inteira num único .html, 100% local, pela sessão da aba (inclusive Tor), sem rastreadores, com CSP que impede o
+arquivo de 'ligar para casa' e selo SHA-256 verificável. Detalhes e limites: ARQUIVAR-PAGINA.md.
+
+ATUALIZAÇÃO 1.8.11 — veja RELATORIO-DE-CORRECOES-1.8.11.txt (correções da auditoria: cofre, Tor/yt-dlp/ClamAV, SponsorBlock, instaladores).
+AVISO DE PRIVACIDADE (1.8.11): o NanoDesk promete "nada no disco", com DUAS exceções que você controla em Configurações:
+  (1) o cofre de senhas grava nanodesk-vault.json (cifrado) — ligue "Cofre temporário" para mantê-lo só na memória;
+  (2) o cache do bloqueador (cache-filtros) — desligue "Guardar o cache do bloqueador em disco" para não deixar nada.
+O SponsorBlock agora vem DESLIGADO por padrão (cada vídeo consulta sponsor.ajay.app; só um prefixo do hash do ID é enviado).
+Os relatórios 1.7.2 e 1.7.3 citados em versões antigas NÃO fazem parte do pacote; o histórico está no CHANGELOG do código-fonte.
+ATUALIZAÇÃO 1.8.10 — veja RELATORIO-DE-CORRECOES-1.8.10.txt (correção abrangente de erros em YouTube, scripts de bloqueio, Tor, ClamAV, cofre de senhas, SponsorBlock, etc.).
+
+NANODESK 1.7.2 — CORREÇÕES DO RELATÓRIO DE FALHAS (Invidious, Piped,
+FreeTube, G1/Consent-O-Matic, LibreTranslate, LanguageTool)
+=====================================================================
+Base: 1.7.0. Nenhuma função foi removida; tudo abaixo corrige os
+problemas que VOCÊ reportou depois de testar a 1.7.0.
+
+== 1. INVIDIOUS "Checking your browser / Automated verification failed"
+CAUSA REAL: o desafio anti-bot Anubis das instâncias públicas chega
+como PÁGINA HTTP 200. O failover da 1.7.0 só reagia a erro de REDE
+(instância fora do ar) — para uma página de desafio que carrega
+"normalmente", ele nunca disparava e a tela ficava travada na
+verificação.
+O QUE FOI FEITO (nova camada "watchdog do vídeo nativo"):
+* Depois de cada navegação para uma instância (e também nas trocas de
+  vídeo dentro do próprio Piped/Invidious, que são SPA), um script
+  vigilante examina o CONTEÚDO da página (título + texto) em 3 momentos
+  (~1,2 s / 2,8 s / 5,2 s). Desafio Anubis legítimo passa em 1–3 s num
+  navegador normal — só o desafio que NÃO PASSA é tratado como falha.
+* Detectou falha? O NanoDesk SUSPENDE a instância por 15 minutos (cache
+  só em RAM) e navega sozinho para a PRÓXIMA reserva, até 2 trocas.
+  Aviso na tela explica o motivo ("exige verificação anti-bot…").
+* Esgotadas as reservas, o vídeo original abre no YouTube comum (que
+  segue protegido pelo ytguard e pelo bloqueador) — nunca fica em tela
+  morta.
+* SONDAS DE FUNDO: a cada 10 minutos (e 20 s após abrir) o NanoDesk
+  testa a instância principal e as reservas ANTES de você clicar num
+  vídeo; as que responderem desafio/bloqueio/morte já entram suspensas,
+  e a navegação nasce apontando para uma instância viva. Falha de REDE
+  (offline/Tor) não suspende ninguém.
+* Padrões re-testados no build (curl, 2026-11): yewtu.be e
+  invidious.materialio.us respondem 200 SEM desafio; inv.nadeko.net usa
+  Anubis (passa em navegador normal) e ficou no fim da lista;
+  invidious.nerdvpn.de inacessível no teste — retirada do padrão
+  (você pode recolocar em Configurações).
+
+== 2. PIPED "LOGIN_REQUIRED: Sign in to confirm that you're not a bot"
+CAUSA REAL: o YouTube bloqueou o acesso anônimo pelo IP das APIs
+públicas do Piped. MAIS GRAVE: o padrão da 1.7.0 era piped.video, cuja
+API oficial (pipedapi.kavin.rocks) estava FORA DO AR (HTTP 525) — ou
+seja, o padrão apontava para uma instância morta por dentro.
+O QUE FOI FEITO:
+* Novo padrão: piped.private.coffee — par frontend+API testado no build
+  respondendo HTTP 200 com trending em JSON (a única API pública
+  totalmente saudável encontrada no dia do teste).
+* A lista de reservas agora vale para Piped E Invidious (antes a
+  política Invidious não tinha NENHUMA reserva) e o watchdog do item 1
+  também cobre o erro "Sign in to confirm…" dentro do Piped: detectou,
+  suspende e gira para a reserva.
+* As sondas de fundo testam a API do par quando conhecida (/trending
+  com região BR) e a página HTML nos outros casos ("Endpoint disabled"
+  do Invidious NÃO é falha — prova que o servidor responde).
+* Busca (/results), canal (@handle e /channel/ID) e playlist agora
+  TAMBÉM vão para o frontend — antes só os links de vídeo eram
+  levados, e busca/canal ficavam presos no YouTube.
+
+== 3. FREETUBE: "não tem como encaixar ele no projeto para abrir nativo?"
+RESPOSTA TÉCNICA HONESTA: NÃO dá para embutir. O FreeTube é um
+aplicativo desktop SEPARADO (Electron, com o próprio Chromium e banco
+de dados); não existe biblioteca dele para incorporar dentro do
+NanoDesk. O que era FEIO na 1.7.0: escolher a política FreeTube sem o
+app instalado disparava o protocolo freetube:// às cegas — e o Windows
+abría a loja / o diálogo "escolha um aplicativo" que você viu.
+O QUE FOI FEITO:
+* O NanoDesk agora CONSULTA ANTES se o protocolo freetube:// está
+  registrado (Windows: registro via reg query; Linux: xdg-mime),
+  com resultado em cache por 10 minutos.
+* Está instalado? Dispara o deep link e o FreeTube abre o vídeo sozinho
+  (modo nativo de verdade, do jeito que o FreeTube oficial suporta).
+* NÃO está? NÃO dispara nada: mostra um diálogo explicando por que não
+  dá para embutir, com duas saídas úteis — (1) abrir o MESMO vídeo no
+  player nativo do navegador (Piped/Invidious com o failover novo) ou
+  (2) ir à página oficial de download (freetubeapp.io/download). Depois
+  de instalar, os links passam a abrir nele sem configurar nada.
+* Busca/canal/playlist sob política FreeTube não são descartados: caem
+  no player nativo do navegador (o FreeTube só recebe link de vídeo).
+
+== 4. CONSENT-O-MATIC NO G1 (globo.com)
+CAUSA PROVÁVEL: a barreira LGPD do Globo NÃO usa nenhum dos 18 CMPs
+internacionais da lista direta, e os botões dela não são alcançados
+pela busca genérica (elementos clicáveis fora de <button>).
+O QUE FOI FEITO (camada LGPD/Globo):
+* Nova camada de busca: procura o botão de RECUSA dentro de
+  contêineres de consentimento (id/classe com lgpd/consent/cookie e
+  data-testid*="consent"), incluindo div/span com onclick.
+* As expressões de recusa ganharam variantes BR ("continuar sem
+  permitir", "prosseguir sem aceitar", "seguir sem aceitar"… e as que
+  já cobriam "Continuar sem aceitar" do Globo).
+* Clique com BORBUCHA: além do click nativo, um MouseEvent com
+  bubbles explícito é reenviado — alguns CMPs (incluído o do Globo)
+  escutam o evento no ancestral.
+* Nada muda de comportamento nos outros sites: cooldown de 24 h,
+  whitelist e nível máximo continuam iguais.
+
+== 5. LIBRETRANSLATE FORA DO AR
+CAUSA REAL (testada no build): libretranslate.com agora EXIGE chave de
+API (HTTP 400) e os espelhos públicos caíram (libretranslate.de deu
+301; translate.disroot.org com erro). O ecossistema público morreu.
+O QUE FOI FEITO (sem quebrar a regra de privacidade):
+* O "Traduzir" comum SEM servidor configurado não é mais "tradução
+  desligada": passa a usar o MyMemory público (sem chave), SEMPRE com o
+  diálogo de consentimento mostrando o destino e o recorte de 500
+  caracteres.
+* LibreTranslate configurado e FALHOU? O "Traduzir" tenta o MyMemory
+  com consentimento próprio antes de desistir (aviso na tela diz que
+  foi a reserva que respondeu).
+* CORREÇÃO DE BUG LATENTE: o MyMemory NÃO aceita 'auto' como idioma de
+  origem ("'AUTO' IS AN INVALID SOURCE LANGUAGE") — quando a detecção
+  do LanguageTool não rodava, a consulta da LibraryTranslate inteira ia
+  pro chão. Agora a origem 'auto' cai para 'en'.
+
+== 6. LANGUAGETOOL "às vezes funciona, às vezes não"
+CAUSA REAL: a API pública limita ~20 consultas/min (HTTP 429) e oscila.
+O QUE FOI FEITO:
+* Fila com espaçamento mínimo de 3 s entre consultas públicas.
+* Reenvio com espera progressiva em 429/5xx (duas tentativas por
+  destino).
+* ESPELHO oficial api.languagetoolplus.com (testado no build, HTTP 200)
+  quando a principal falha — SÓ para API pública; servidor local/próprio
+  nunca recebe texto em outro lugar. O diálogo de consentimento cita os
+  dois destinos.
+* Cache de resultados por texto+idioma (RAM, 10 min) — o mesmo texto
+  verificado de novo não gera nova consulta.
+
+== 7. OUTROS
+* Configurações → Vídeo nativo: textos novos explicando o watchdog, os
+  padrões re-testados e a detecção do FreeTube.
+* Relatórios: RELATORIO-DE-CORRECOES-1.7.1.txt (este arquivo) e
+  O-QUE-MUDOU.txt atualizados; SHA256SUMS.txt regenerado.
+* Testes: novo tests/regressao-1_7_1.test.js com 16 testes dos núcleos
+  puros (classificação de página de falha, cache de instâncias,
+  sondas, mapeamento de busca/canal/playlist, parser do registro do
+  freetube://, camada LGPD do Consent-O-Matic e o langpair do MyMemory).
+  Suíte completa: 127/127 passando (nenhuma quebra nas regressões
+  1.5.2 → 1.7.0).
+
+== LIMITES HONESTOS
+* Instâncias públicas Piped/Invidious continuam um campo de batalha
+  (o YouTube bloqueia IPs de datacenter; instâncias desligam API ou
+  ativam anti-bot). O watchdog + sondas + reservas agora lidam com
+  isso SOZINHOS, mas se TODAS as da lista caírem no mesmo dia, edite a
+  lista em Configurações → Vídeo nativo.
+* O desafio Anubis legítimo (que passa em ~1–3 s) NÃO é tratado como
+  falha — de propósito. Se uma instância ficar num desafio infinito, o
+  watchdog detecta (a página não sai da verificação) e gira para a
+  reserva.
+* O FreeTube depende do app estar instalado; no macOS a detecção por
+  CLI não é confiável e o NanoDesk trata como "não detectado" (o
+  diálogo orienta).
+* O MyMemory público tem cota diária anônima (≈1.000 palavras) e
+  recorta textos em 500 caracteres — é reserva, não substituto de um
+  LibreTranslate próprio.

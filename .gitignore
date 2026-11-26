@@ -1,0 +1,41 @@
+# ==== Segredos e credenciais (nunca versionar) ====
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials*.json
+
+# ==== Dependências / árvores pesadas ====
+node_modules/
+nanodesk/nm-prod/
+
+# ==== Builds e artefatos gerados (não versionar) ====
+nanodesk/NanoDesk-win32-x64/
+nanodesk/staging/
+nanodesk/tk
+nanodesk/*.asar
+nanodesk/*.asar.new
+nanodesk/*.asar.new.unpacked/
+nanodesk/*.asar.unpacked/
+nanodesk/app-src/release/
+
+# ==== Área de testes/auditoria interna (pedido: não publicar) ====
+nanodesk/app-src/tests/
+AUDITORIA-*
+TESTE-MANUAL-*
+RELATORIO-DE-CORRECOES-*
+
+# ==== Sandbox / arquivos de trabalho (não fazem parte do projeto) ====
+upload/
+download/
+.dtest/
+skills/
+scripts/
+
+# ==== Logs e temporários ====
+*.log
+*.tmp
+.DS_Store
+Thumbs.db

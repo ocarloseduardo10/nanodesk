@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src * data:; style-src 'self'; script-src 'self'">
+  <title>NanoDesk</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Barra de título própria (identidade independente do SO) -->
+  <header id="titlebar">
+    <div class="brand">
+      <div class="brand-logo">N</div>
+      <span class="brand-name">NanoDesk</span>
+      <span class="brand-tag">ultraleve</span>
+    </div>
+    <div class="titlebar-drag"></div>
+    <div class="win-btns">
+      <button class="win-btn" id="btn-min" title="Minimizar" data-icon="min"></button>
+      <button class="win-btn" id="btn-max" title="Maximizar" data-icon="max"></button>
+      <button class="win-btn close" id="btn-close" title="Fechar o NanoDesk" data-icon="x"></button>
+    </div>
+  </header>
+
+  <!-- Gerenciador de abas -->
+  <nav id="tabstrip">
+    <div id="tabs"></div>
+    <button class="icon-btn" id="btn-newtab" title="Nova aba (Ctrl+T)" data-icon="plus"></button>
+  </nav>
+
+  <!-- Barra de ferramentas de navegação -->
+  <div id="toolbar">
+    <button class="icon-btn" id="btn-back" title="Voltar (Alt+←)" data-icon="back"></button>
+    <button class="icon-btn" id="btn-fwd" title="Avançar (Alt+→)" data-icon="fwd"></button>
+    <button class="icon-btn" id="btn-reload" title="Recarregar (Ctrl+R)" data-icon="reload"></button>
+    <button class="icon-btn" id="btn-home" title="Página inicial (Alt+Home)" data-icon="home"></button>
+
+    <div id="addressbar">
+      <span id="sec-chip" class="sec-chip" data-icon="search"></span>
+      <input id="address" type="text" spellcheck="false" autocomplete="off"
+             placeholder="Pesquise na web ou digite um endereço (http/https)">
+      <button class="icon-btn small" id="btn-star" title="Adicionar aos favoritos (Ctrl+D)" data-icon="star"></button>
+    </div>
+
+    <button class="icon-btn" id="btn-ext" title="Abrir no navegador padrão (Ctrl+Shift+O)" data-icon="ext"></button>
+    <button class="icon-btn" id="btn-net" title="Rede — VPN, Tor e DNS" data-icon="net">
+      <span class="net-dot" id="net-dot"></span>
+    </button>
+    <button class="icon-btn" id="btn-tor" title="Conexão Tor (nativo) — Ctrl+Shift+T" data-icon="onion">
+      <span class="badge" id="tor-badge" hidden>…</span>
+    </button>
+    <button class="icon-btn" id="btn-downloads" title="Downloads (Ctrl+J)" data-icon="download"></button>
+    <button class="icon-btn" id="btn-media" title="Detectar mídia na página (Ctrl+Shift+M)" data-icon="media">
+      <span class="badge" id="media-badge" hidden>0</span>
+    </button>
+    <button class="icon-btn" id="btn-reader" title="Leitor de notícias (Ctrl+Shift+L)" data-icon="rss">
+      <span class="badge" id="reader-badge" hidden>0</span>
+    </button>
+    <button class="icon-btn" id="btn-readmode" title="Modo leitura (F9)" data-icon="book"></button>
+    <button class="icon-btn" id="btn-archive" title="Salvar página completa em arquivo único (Ctrl+Alt+S)" data-icon="archive"></button>
+    <button class="icon-btn" id="btn-protection" title="Proteções — pop-ups e redirecionamentos (Ctrl+Shift+P)" data-icon="popup">
+      <span class="badge" id="protection-badge">0</span>
+    </button>
+    <button class="icon-btn" id="btn-shield" title="Bloqueador de anúncios nativo" data-icon="shield">
+      <span class="badge" id="shield-badge">0</span>
+    </button>
+    <button class="icon-btn" id="btn-menu" title="Menu" data-icon="menu"></button>
+
+    <div id="progress"><div id="progress-bar"></div></div>
+
+    <div id="findbar" role="search" aria-label="Buscar na página">
+      <input id="find-input" type="text" spellcheck="false" autocomplete="off" placeholder="Buscar na página">
+      <span id="find-count"></span>
+      <button class="icon-btn small" id="find-prev" title="Resultado anterior (Shift+F3)" data-icon="up"></button>
+      <button class="icon-btn small" id="find-next" title="Próximo resultado (F3)" data-icon="down"></button>
+      <button class="icon-btn small" id="find-close" title="Fechar (Esc)" data-icon="x"></button>
+    </div>
+  </div>
+
+  <!-- Área de conteúdo -->
+  <main id="views">
+    <div id="view-area">
+      <!-- Nova Aba interna -->
+      <div id="ntp">
+        <div class="ntp-inner">
+          <div class="ntp-clock" id="ntp-clock">--:--</div>
+          <div class="ntp-date" id="ntp-date"></div>
+          <div class="ntp-logo">N</div>
+          <h1>NanoDesk</h1>
+          <p class="ntp-sub">Navegação anônima — rápido, discreto e sem deixar rastros</p>
+          <div class="ntp-search">
+            <span class="ntp-search-ic" data-icon="search"></span>
+            <input id="ntp-search" type="text" spellcheck="false" autocomplete="off"
+                   placeholder="Pesquisar na web ou digitar um endereço">
+          </div>
+          <div class="ntp-privacy">
+            <span class="ntp-privacy-ic" data-icon="shield"></span>
+            <span>Sua sessão de navegação não mantém cookies, histórico e dados de sites após o encerramento do NanoDesk. Os downloads são salvos normalmente na pasta Downloads. A navegação privada não garante anonimato perante sites ou provedores de Internet.</span>
+          </div>
+          <div class="ntp-stats" id="ntp-stats"></div>
+          <p class="ntp-foot">Projeto acadêmico · Zero dados gravados · Sem telemetria</p>
+        </div>
+      </div>
+      <!-- As páginas das abas são WebContentsView nativas posicionadas
+           exatamente sobre esta área pelo processo principal (1.3.0). -->
+    </div>
+  </main>
+
+  <!-- Painéis laterais -->
+  <aside class="panel" id="panel-favorites">
+    <div class="panel-head">
+      <h3>Favoritos</h3>
+      <button class="icon-btn panel-close" title="Fechar painel" data-icon="x"></button>
+    </div>
+    <div class="panel-body" id="favorites-body"></div>
+  </aside>
+
+  <aside class="panel" id="panel-downloads">
+    <div class="panel-head">
+      <h3>Downloads</h3>
+      <button class="icon-btn panel-close" title="Fechar painel" data-icon="x"></button>
+    </div>
+    <div class="panel-body">
+      <div id="downloads-body"></div>
+    </div>
+  </aside>
+
+  <!-- 1.9.5 — Painel de detecção de mídia -->
+  <aside class="panel" id="panel-media">
+    <div class="panel-head">
+      <h3>Mídia detectada</h3>
+      <button class="icon-btn panel-close" title="Fechar painel" data-icon="x"></button>
+    </div>
+    <div class="panel-body">
+      <div id="media-body"></div>
+    </div>
+  </aside>
+
+  <aside class="panel" id="panel-adblock">
+    <div class="panel-head">
+      <h3>Bloqueador de anúncios</h3>
+      <button class="icon-btn panel-close" title="Fechar painel" data-icon="x"></button>
+    </div>
+    <div class="panel-body" id="adblock-body"></div>
+  </aside>
+
+  <aside class="panel" id="panel-protection">
+    <div class="panel-head">
+      <h3>Proteções</h3>
+      <button class="icon-btn panel-close" title="Fechar painel" data-icon="x"></button>
+    </div>
+    <div class="panel-body" id="protection-body"></div>
+  </aside>
+
+  <aside class="panel" id="panel-settings">
+    <div class="panel-head">
+      <h3>Configurações</h3>
+      <button class="icon-btn panel-close" title="Fechar painel" data-icon="x"></button>
+    </div>
+    <div class="panel-body" id="settings-body"></div>
+  </aside>
+
+  <aside class="panel" id="panel-menu">
+    <div class="panel-head">
+      <h3>Menu</h3>
+      <button class="icon-btn panel-close" title="Fechar painel" data-icon="x"></button>
+    </div>
+    <div class="panel-body" id="menu-body"></div>
+  </aside>
+
+  <aside class="panel" id="panel-reader">
+    <div class="panel-head">
+      <h3 id="reader-head">Leitor de notícias</h3>
+      <button class="icon-btn panel-close" title="Fechar painel" data-icon="x"></button>
+    </div>
+    <div class="panel-body" id="reader-body"></div>
+  </aside>
+
+  <aside class="panel" id="panel-tor">
+    <div class="panel-head">
+      <h3>Conexão Tor</h3>
+      <button class="icon-btn panel-close" title="Fechar painel" data-icon="x"></button>
+    </div>
+    <div class="panel-body" id="tor-body"></div>
+  </aside>
+
+  <!-- Painéis 1.6.0: Rede / Segurança / Histórico -->
+  <aside class="panel" id="panel-network">
+    <div class="panel-head">
+      <h3>Rede — VPN, Tor e DNS</h3>
+      <button class="icon-btn panel-close" title="Fechar painel" data-icon="x"></button>
+    </div>
+    <div class="panel-body" id="network-body"></div>
+  </aside>
+
+  <aside class="panel" id="panel-security">
+    <div class="panel-head">
+      <h3>Segurança</h3>
+      <button class="icon-btn panel-close" title="Fechar painel" data-icon="x"></button>
+    </div>
+    <div class="panel-body" id="security-body"></div>
+  </aside>
+
+  <aside class="panel" id="panel-history">
+    <div class="panel-head">
+      <h3>Histórico da sessão</h3>
+      <button class="icon-btn panel-close" title="Fechar painel" data-icon="x"></button>
+    </div>
+    <div class="panel-body" id="history-body"></div>
+  </aside>
+
+  <!-- 1.7.0: LibraryTranslate — biblioteca de traduções (só RAM) -->
+  <aside class="panel" id="panel-biblioteca">
+    <div class="panel-head">
+      <h3>Biblioteca de traduções</h3>
+      <button class="icon-btn panel-close" title="Fechar painel" data-icon="x"></button>
+    </div>
+    <div class="panel-body" id="biblioteca-body"></div>
+  </aside>
+
+  <!-- 1.8.9: cofre de senhas NATIVO (AES-256-GCM + PBKDF2) -->
+  <aside class="panel" id="panel-vault">
+    <div class="panel-head">
+      <h3>Cofre de senhas</h3>
+      <button class="icon-btn panel-close" title="Fechar painel" data-icon="x"></button>
+    </div>
+    <div class="panel-body" id="vault-body"></div>
+  </aside>
+
+  <!-- (o menu de contexto de abas é nativo — Menu.popup no processo principal) -->
+
+  <!-- Avisos -->
+  <div id="toasts"></div>
+
+  <script src="../shared/validation.js"></script>
+  <script src="vkeyboard.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
