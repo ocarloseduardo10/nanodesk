@@ -39,3 +39,11 @@ scripts/
 *.tmp
 .DS_Store
 Thumbs.db
+
+# ==== CI workflow (NÃO versionar enquanto o token não tiver permissão 'workflow') ====
+# O GitHub rejeita QUALQUER push que crie/atualize arquivos em
+# .github/workflows/ sem a permissão 'workflow' no token — e commits
+# automáticos com este arquivo travam todo o push do repositório.
+# O arquivo fica em disco e em download/supply-chain.yml; para publicar,
+# dê a permissão 'workflows' ao token e use `git add -f` ou remova esta linha.
+.github/workflows/supply-chain.yml
